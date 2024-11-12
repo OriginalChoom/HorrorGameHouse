@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://na7jym7y70g2"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_diri3"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_woo43"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_5y54i"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7s43h"]
+
+[node name="player" type="CharacterBody3D"]
+script = ExtResource("1_diri3")
+
+[node name="player_collison" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_woo43")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CylinderMesh_5y54i")
+
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.681431, 0)
+
+[node name="head_x_rotation" type="Node3D" parent="head"]
+
+[node name="player_camera" type="Camera3D" parent="head/head_x_rotation"]
+
+[node name="flashlight" type="Node3D" parent="head"]
+
+[node name="flashlight_mesh" type="MeshInstance3D" parent="head/flashlight"]
+transform = Transform3D(0.115624, 0, 0, 0, 0.121776, 0, 0, 0, 0.867897, 0.197141, -0.27553, -0.658127)
+mesh = SubResource("BoxMesh_7s43h")
+
+[node name="flashlight_light" type="SpotLight3D" parent="head/flashlight/flashlight_mesh"]
+transform = Transform3D(8.6487, 0, 0, 0, 8.21181, 0, 0, 0, 1.15221, 0, 0, -0.413227)
+spot_attenuation = 2.37
