@@ -23,18 +23,37 @@ glow_enabled = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+visible = false
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_m3j3i")
 
 [node name="floor" type="StaticBody3D" parent="."]
-transform = Transform3D(10.0434, 0, 0, 0, 1.00434, 0, 0, 0, 10.0434, 0, 0, 0)
+transform = Transform3D(25.6237, 0, 0, 0, 1.00434, 0, 0, 0, 24.145, 0, 0, 0)
 
 [node name="floor_collsion" type="CollisionShape3D" parent="floor"]
 shape = SubResource("BoxShape3D_ue1jb")
 
 [node name="floor_mesh" type="MeshInstance3D" parent="floor"]
+mesh = SubResource("BoxMesh_a7xkv")
+
+[node name="floor2" type="StaticBody3D" parent="."]
+transform = Transform3D(9.44881, 0, 0, 0, 9.90778, 0, 0, 0, 1, -6.97047, 4.2675, -9.3165)
+
+[node name="floor_collsion" type="CollisionShape3D" parent="floor2"]
+shape = SubResource("BoxShape3D_ue1jb")
+
+[node name="floor_mesh" type="MeshInstance3D" parent="floor2"]
+mesh = SubResource("BoxMesh_a7xkv")
+
+[node name="floor3" type="StaticBody3D" parent="."]
+transform = Transform3D(6.54861, 0, -0.720878, 0, 9.90778, 0, 6.81144, 0, 0.693062, 5.58924, 4.2675, -5.44546)
+
+[node name="floor_collsion" type="CollisionShape3D" parent="floor3"]
+shape = SubResource("BoxShape3D_ue1jb")
+
+[node name="floor_mesh" type="MeshInstance3D" parent="floor3"]
 mesh = SubResource("BoxMesh_a7xkv")
 
 [node name="player" parent="." instance=ExtResource("1_4khbc")]

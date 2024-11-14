@@ -1,11 +1,12 @@
 [gd_scene load_steps=5 format=3 uid="uid://na7jym7y70g2"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_diri3"]
-[ext_resource type="ArrayMesh" uid="uid://dpo5byje7aiag" path="res://Models/Meshes/flashlight.obj" id="2_odq7y"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_woo43"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_5y54i"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7s43h"]
 
 [node name="player" type="CharacterBody3D"]
 script = ExtResource("1_diri3")
@@ -27,13 +28,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.681431, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.681431, 0)
 
 [node name="flashlight_mesh" type="MeshInstance3D" parent="flashlight"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.211511, -0.259647, -0.386104)
-mesh = ExtResource("2_odq7y")
-skeleton = NodePath("../..")
+transform = Transform3D(0.115624, 0, 0, 0, 0.121776, 0, 0, 0, 0.867897, 0.197141, -0.27553, -0.658127)
+mesh = SubResource("BoxMesh_7s43h")
 
 [node name="flashlight_light" type="SpotLight3D" parent="flashlight/flashlight_mesh"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.238737, 0, -1.49012e-08)
-light_color = Color(0.913725, 0.913725, 0.792157, 1)
-light_energy = 10.0
-spot_range = 15.0
+transform = Transform3D(8.6487, 0, 0, 0, 8.21181, 0, 0, 0, 1.15221, 0, 0, -0.413227)
 spot_attenuation = 2.37
