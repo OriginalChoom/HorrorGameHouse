@@ -8,6 +8,21 @@
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_5y54i"]
 
+[sub_resource type="Animation" id="Animation_3bumc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_s3gdh"]
 resource_name = "idle"
 length = 9.0
@@ -23,21 +38,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0.00523599, 0.00523599, 0.00523599), Vector3(0, 0, 0), Vector3(-0.00523599, -0.00523599, -0.00523599), Vector3(0, 0, 0), Vector3(0.00523599, -0.00523599, 0.00523599), Vector3(0, 0, 0), Vector3(-0.00523599, 0.00523599, -0.00523599)]
-}
-
-[sub_resource type="Animation" id="Animation_3bumc"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_mjace"]
@@ -84,9 +84,11 @@ blend_point_2/pos = 0.0
 script = ExtResource("1_diri3")
 
 [node name="player_collison" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.21146)
 shape = SubResource("CylinderShape3D_woo43")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("CylinderMesh_5y54i")
 
 [node name="head" type="Node3D" parent="."]
@@ -123,3 +125,7 @@ light_projector = ExtResource("3_qeham")
 shadow_enabled = true
 spot_range = 15.0
 spot_attenuation = 2.37
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
