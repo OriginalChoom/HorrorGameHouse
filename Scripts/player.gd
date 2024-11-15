@@ -8,13 +8,15 @@ extends CharacterBody3D
 
 @onready var flashlight_mesh = $flashlight/flashlight_mesh
 
+@onready var animation_tree = $head/head_x_rotation/player_camera/AnimationTree
 
 
 const SPEED = 5.0
 const FLASHLIGHT_FOLLOW_SPEED = 15.0
+const ANIM_SMOOTHING_SPEED = 8.0 
 
 var sensitivity = -0.1
-
+var anim_blend = 0.0
 
 #mouse movement
 func _ready():
@@ -64,6 +66,8 @@ func _physics_process(delta):
 	velocity.z = direction.z * SPEED
 	move_and_slide()
 	
+	anim_blend = lerp(anim_blend, direction.length(), delta * ANIM_SMOOTHING_SPEED)
+	animation_tree.set("parameters/blend_position", anim_blend)
 	
 func make_flashligh_follow(delta):
 	flashlight.rotation.y = lerp(flashlight.rotation.y, head.rotation.y, delta * FLASHLIGHT_FOLLOW_SPEED)
