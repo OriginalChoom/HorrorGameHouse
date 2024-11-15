@@ -10,6 +10,7 @@ extends CharacterBody3D
 
 @onready var animation_tree = $head/head_x_rotation/player_camera/AnimationTree
 
+@onready var color_rect = $Control/ColorRect
 
 const SPEED = 5.0
 const FLASHLIGHT_FOLLOW_SPEED = 15.0
@@ -21,6 +22,7 @@ var anim_blend = 0.0
 #mouse movement
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	color_rect.material.set("shader_parameter/effect_amount", 1.0)
 
 
 func _input(event):
@@ -51,6 +53,7 @@ func _physics_process(delta):
 
 	var head_basis = head.get_transform().basis
 	var direction = Vector3.ZERO
+
 	
 	if Input.is_action_pressed("up"):
 		direction -= head_basis.z

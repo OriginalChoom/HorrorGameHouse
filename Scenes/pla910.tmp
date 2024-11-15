@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://na7jym7y70g2"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_diri3"]
+[ext_resource type="Script" path="res://Scripts/player_test.gd" id="1_fdtld"]
 [ext_resource type="ArrayMesh" uid="uid://dpo5byje7aiag" path="res://Models/Meshes/flashlight.obj" id="2_odq7y"]
 [ext_resource type="Texture2D" uid="uid://1ovegk1o03x4" path="res://Models/Textures/flashlight_texture.png" id="3_qeham"]
 [ext_resource type="Shader" path="res://Shaders/fisheye.gdshader" id="4_dj7bn"]
@@ -86,7 +86,7 @@ blend_point_2/node = SubResource("AnimationNodeBlendSpace1D_awyqi")
 blend_point_2/pos = 0.0
 
 [node name="player" type="CharacterBody3D"]
-script = ExtResource("1_diri3")
+script = ExtResource("1_fdtld")
 
 [node name="Control" type="Control" parent="."]
 custom_minimum_size = Vector2(1280, 720)

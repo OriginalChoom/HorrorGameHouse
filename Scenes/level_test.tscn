@@ -56,5 +56,8 @@ shape = SubResource("BoxShape3D_ue1jb")
 [node name="floor_mesh" type="MeshInstance3D" parent="floor3"]
 mesh = SubResource("BoxMesh_a7xkv")
 
-[node name="player" parent="." instance=ExtResource("1_4khbc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0879512, 1.73703, 1.81493)
+[node name="player_node" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25029, 2.98939, 4.82126)
+
+[node name="player" parent="player_node" instance=ExtResource("1_4khbc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
