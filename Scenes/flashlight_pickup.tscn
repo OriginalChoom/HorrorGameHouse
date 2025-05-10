@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://qhm3ou8hungo"]
+
+[ext_resource type="ArrayMesh" uid="uid://dpo5byje7aiag" path="res://Models/Meshes/flashlight.obj" id="1_h5b84"]
+[ext_resource type="Script" uid="uid://dh388bcoaigny" path="res://Scripts/flashlight_pickup.gd" id="1_l5b3j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cqxhk"]
+size = Vector3(0.438293, 0.134644, 0.140594)
+
+[node name="flashlight_pickup" type="StaticBody3D"]
+script = ExtResource("1_l5b3j")
+
+[node name="flashlight_pickup_mesh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_h5b84")
+
+[node name="flashlight_pickup_cols" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.084022, 0.00159791, 0.00175455)
+shape = SubResource("BoxShape3D_cqxhk")

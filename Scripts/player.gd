@@ -3,6 +3,8 @@ extends CharacterBody3D
 @onready var head = $head
 @onready var head_x_rotation = $head/head_x_rotation
 
+@onready var player_camera = $head/head_x_rotation/player_camera
+
 @onready var flashlight = $flashlight
 @onready var flashlight_light = $flashlight/flashlight_mesh/flashlight_light
 
@@ -31,11 +33,6 @@ func _input(event):
 		head.rotation_degrees.y += sensitivity * event.relative.x
 		head_x_rotation.rotation_degrees.x += sensitivity * event.relative.y
 		head_x_rotation.rotation_degrees.x = clamp(head_x_rotation.rotation_degrees.x, -89, 89)
-		
-	#flashlight follow camera
-	if event is InputEventKey:
-		if Input.is_action_just_pressed("flash"):
-			flashlight_light.visible = !flashlight_light.visible
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -75,6 +72,3 @@ func _physics_process(delta):
 func make_flashligh_follow(delta):
 	flashlight.rotation.y = lerp(flashlight.rotation.y, head.rotation.y, delta * FLASHLIGHT_FOLLOW_SPEED)
 	flashlight.rotation.x = lerp(flashlight.rotation.x, head_x_rotation.rotation.x, delta * FLASHLIGHT_FOLLOW_SPEED)
-
-
-

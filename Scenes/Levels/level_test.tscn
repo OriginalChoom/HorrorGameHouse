@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://22m6ag8jju4h"]
+[gd_scene load_steps=10 format=3 uid="uid://22m6ag8jju4h"]
 
-[ext_resource type="PackedScene" uid="uid://na7jym7y70g2" path="res://Scenes/player.tscn" id="1_4khbc"]
+[ext_resource type="PackedScene" uid="uid://na7jym7y70g2" path="res://Scenes/player.tscn" id="1_cjxgb"]
+[ext_resource type="PackedScene" uid="uid://qhm3ou8hungo" path="res://Scenes/flashlight_pickup.tscn" id="2_asws2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xad5u"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -18,6 +19,10 @@ glow_enabled = true
 [sub_resource type="BoxShape3D" id="BoxShape3D_ue1jb"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_a7xkv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_i7j31"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o2pfi"]
 
 [node name="Root" type="Node3D"]
 
@@ -56,8 +61,19 @@ shape = SubResource("BoxShape3D_ue1jb")
 [node name="floor_mesh" type="MeshInstance3D" parent="floor3"]
 mesh = SubResource("BoxMesh_a7xkv")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.87562, 1.20261, 2.03935)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_i7j31")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_o2pfi")
+
 [node name="player_node" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25029, 2.98939, 4.82126)
 
-[node name="player" parent="player_node" instance=ExtResource("1_4khbc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+[node name="player" parent="player_node" instance=ExtResource("1_cjxgb")]
+
+[node name="flashlight_pickup" parent="." instance=ExtResource("2_asws2")]
+transform = Transform3D(0.0647413, 0, 0.997902, 0, 1, 0, -0.997902, 0, 0.0647413, -5.77297, 1.7601, 2.04046)

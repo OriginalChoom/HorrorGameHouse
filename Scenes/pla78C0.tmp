@@ -1,11 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://na7jym7y70g2"]
+[gd_scene load_steps=17 format=3 uid="uid://na7jym7y70g2"]
 
-[ext_resource type="Script" uid="uid://dfrjhmuqw8ls8" path="res://Scripts/player.gd" id="1_diri3"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_diri3"]
 [ext_resource type="ArrayMesh" uid="uid://dpo5byje7aiag" path="res://Models/Meshes/flashlight.obj" id="2_odq7y"]
-[ext_resource type="Script" uid="uid://d4fm7b4huayij" path="res://Scripts/flashlight.gd" id="3_22mvr"]
+[ext_resource type="Script" path="res://Scripts/flashlight.gd" id="3_22mvr"]
 [ext_resource type="Texture2D" uid="uid://1ovegk1o03x4" path="res://Models/Textures/flashlight_texture.png" id="3_qeham"]
-[ext_resource type="Shader" uid="uid://cox8uj3xp8n6g" path="res://Shaders/fisheye.gdshader" id="4_dj7bn"]
-[ext_resource type="Script" uid="uid://2h7uam58atbr" path="res://Scripts/raycast_player.gd" id="6_ypnis"]
+[ext_resource type="Shader" path="res://Shaders/fisheye.gdshader" id="4_dj7bn"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wtruc"]
 shader = ExtResource("4_dj7bn")
@@ -66,9 +65,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_w8qe4"]
 _data = {
-&"RESET": SubResource("Animation_3bumc"),
-&"idle": SubResource("Animation_s3gdh"),
-&"walking": SubResource("Animation_mjace")
+"RESET": SubResource("Animation_3bumc"),
+"idle": SubResource("Animation_s3gdh"),
+"walking": SubResource("Animation_mjace")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tunf8"]
@@ -89,11 +88,6 @@ blend_point_2/pos = 0.0
 
 [node name="player" type="CharacterBody3D"]
 script = ExtResource("1_diri3")
-
-[node name="raycast_player" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.681279, 0)
-target_position = Vector3(0, -2, 0)
-script = ExtResource("6_ypnis")
 
 [node name="Control" type="Control" parent="."]
 custom_minimum_size = Vector2(1280, 720)
@@ -131,7 +125,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.681431, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="head/head_x_rotation/player_camera"]
 libraries = {
-&"": SubResource("AnimationLibrary_w8qe4")
+"": SubResource("AnimationLibrary_w8qe4")
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="head/head_x_rotation/player_camera"]
@@ -146,13 +140,11 @@ script = ExtResource("3_22mvr")
 
 [node name="flashlight_mesh" type="MeshInstance3D" parent="flashlight"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.211511, -0.259647, -0.308197)
-visible = false
 mesh = ExtResource("2_odq7y")
 skeleton = NodePath("../..")
 
 [node name="flashlight_light" type="SpotLight3D" parent="flashlight/flashlight_mesh"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.238737, 0, -1.49012e-08)
-visible = false
 light_color = Color(0.913725, 0.913725, 0.792157, 1)
 light_energy = 50.0
 light_projector = ExtResource("3_qeham")

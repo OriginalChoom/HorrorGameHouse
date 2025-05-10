@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d4j5h6x1hl7gr"
-path="res://.godot/imported/flashlight.glb-cc792dab94ed5c4e2cde44d2c62845c4.scn"
+uid="uid://brvxyjk00nbe6"
+path="res://.godot/imported/flashlight.fbx-895c0f6b5e3dc789c3de68458afd04c5.scn"
 
 [deps]
 
-source_file="res://Models/Meshes/flashlight.glb"
-dest_files=["res://.godot/imported/flashlight.glb-cc792dab94ed5c4e2cde44d2c62845c4.scn"]
+source_file="res://Models/Meshes/flashlight.fbx"
+dest_files=["res://.godot/imported/flashlight.fbx-895c0f6b5e3dc789c3de68458afd04c5.scn"]
 
 [params]
 
@@ -28,10 +28,11 @@ meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
 animation/fps=30
-animation/trimming=false
+animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={}
-gltf/naming_version=1
-gltf/embedded_image_handling=1
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
