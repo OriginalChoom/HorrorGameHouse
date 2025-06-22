@@ -3,8 +3,11 @@ extends StaticBody3D
 var flashlight
 
 func _ready():
-	flashlight = get_node("/root/" + get_tree().current_scene.name + "/player/player_head/flashlight")
+	var current_scene = get_tree().get_current_scene()
+	var player = current_scene.get_node("player_node/player")
+	flashlight = player.get_node("flashlight")
 
-func pickup_flashlight():
+func interact():
 	flashlight.picked_up = true
+	flashlight.flashlight_mesh.show()
 	queue_free()

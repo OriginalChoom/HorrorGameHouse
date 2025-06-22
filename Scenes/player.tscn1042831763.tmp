@@ -91,6 +91,7 @@ blend_point_2/pos = 0.0
 
 [node name="player" type="CharacterBody3D"]
 script = ExtResource("1_diri3")
+sensitivity = null
 
 [node name="Control" type="Control" parent="."]
 custom_minimum_size = Vector2(1280, 720)
@@ -146,7 +147,6 @@ script = ExtResource("3_22mvr")
 
 [node name="flashlight_mesh" type="MeshInstance3D" parent="flashlight"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.211511, -0.259647, -0.308197)
-visible = false
 mesh = ExtResource("2_odq7y")
 skeleton = NodePath("../..")
 

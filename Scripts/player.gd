@@ -3,7 +3,7 @@ extends CharacterBody3D
 @onready var head = $head
 @onready var head_x_rotation = $head/head_x_rotation
 
-@onready var player_camera = $head/head_x_rotation/player_camera
+@onready var player_camera : Camera3D = $head/head_x_rotation/player_camera
 
 @onready var flashlight = $flashlight
 @onready var flashlight_light = $flashlight/flashlight_mesh/flashlight_light
@@ -14,11 +14,12 @@ extends CharacterBody3D
 
 @onready var color_rect = $Control/ColorRect
 
+
 const SPEED = 5.0
 const FLASHLIGHT_FOLLOW_SPEED = 15.0
 const ANIM_SMOOTHING_SPEED = 8.0 
 
-var sensitivity = -0.1
+@export var sensitivity = -0.1 
 var anim_blend = 0.0
 
 #mouse movement
