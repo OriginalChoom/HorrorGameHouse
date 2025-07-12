@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://22m6ag8jju4h"]
+[gd_scene load_steps=13 format=3 uid="uid://22m6ag8jju4h"]
 
 [ext_resource type="PackedScene" uid="uid://na7jym7y70g2" path="res://Scenes/player.tscn" id="1_cjxgb"]
 [ext_resource type="PackedScene" uid="uid://qhm3ou8hungo" path="res://Scenes/flashlight_pickup.tscn" id="2_asws2"]
+[ext_resource type="PackedScene" uid="uid://cblqwe7xuqd3c" path="res://Scenes/basic_door.tscn" id="4_qkmes"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xad5u"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -41,6 +42,7 @@ shadow_enabled = true
 environment = SubResource("Environment_m3j3i")
 
 [node name="floor" type="StaticBody3D" parent="."]
+transform = Transform3D(1.61, 0, 0, 0, 1.61, 0, 0, 0, 1.61, 7.5474, 0, 3.17658)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="floor"]
 transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, 0, 0)
@@ -76,3 +78,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25029, 2.98939, 4.82126)
 
 [node name="flashlight_pickup" parent="." instance=ExtResource("2_asws2")]
 transform = Transform3D(0.0647413, 0, 0.997902, 0, 1, 0, -0.997902, 0, 0.0647413, -5.77297, 1.7601, 2.04046)
+
+[node name="door" parent="." instance=ExtResource("4_qkmes")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9784, 0.805195, -1.93284)

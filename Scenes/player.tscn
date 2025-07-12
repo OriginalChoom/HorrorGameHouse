@@ -12,7 +12,7 @@ shader = ExtResource("4_dj7bn")
 shader_parameter/effect_amount = 1.0
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_woo43"]
-height = 1.8
+height = 1.7
 radius = 0.4
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_5y54i"]
@@ -124,10 +124,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.681431, 0)
 [node name="head_x_rotation" type="Node3D" parent="head"]
 
 [node name="player_raycast" type="RayCast3D" parent="head/head_x_rotation"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+transform = Transform3D(1.351, 0, 0, 0, -5.24537e-08, -1.351, 0, 1.2, -5.90541e-08, 0, 0, 0)
 script = ExtResource("3_x3wgy")
 
 [node name="player_camera" type="Camera3D" parent="head/head_x_rotation"]
+fov = 65.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="head/head_x_rotation/player_camera"]
 libraries = {
