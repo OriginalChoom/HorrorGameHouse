@@ -1,10 +1,10 @@
 [gd_scene load_steps=18 format=3 uid="uid://na7jym7y70g2"]
 
-[ext_resource type="Script" uid="uid://dfrjhmuqw8ls8" path="res://Scripts/player.gd" id="1_diri3"]
-[ext_resource type="ArrayMesh" uid="uid://dpo5byje7aiag" path="res://Models/Meshes/flashlight.obj" id="2_odq7y"]
-[ext_resource type="Script" uid="uid://d4fm7b4huayij" path="res://Scripts/flashlight.gd" id="3_22mvr"]
-[ext_resource type="Texture2D" uid="uid://1ovegk1o03x4" path="res://Models/Textures/flashlight_texture.png" id="3_qeham"]
-[ext_resource type="Script" uid="uid://dvh2jrnik7b78" path="res://Scripts/ray_cast_player.gd" id="3_x3wgy"]
+[ext_resource type="Script" uid="uid://dfrjhmuqw8ls8" path="res://Scripts/Player/player.gd" id="1_diri3"]
+[ext_resource type="ArrayMesh" uid="uid://dpo5byje7aiag" path="res://Models/Meshes/Flashlight/flashlight.obj" id="2_odq7y"]
+[ext_resource type="Script" uid="uid://d4fm7b4huayij" path="res://Scripts/Flashlight/flashlight.gd" id="3_22mvr"]
+[ext_resource type="Texture2D" uid="uid://1ovegk1o03x4" path="res://Models/Textures/Flashlight/flashlight_texture.png" id="3_qeham"]
+[ext_resource type="Script" uid="uid://dvh2jrnik7b78" path="res://Scripts/Player/ray_cast_player.gd" id="3_x3wgy"]
 [ext_resource type="Shader" uid="uid://cox8uj3xp8n6g" path="res://Shaders/fisheye.gdshader" id="4_dj7bn"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wtruc"]
@@ -147,7 +147,6 @@ script = ExtResource("3_22mvr")
 
 [node name="flashlight_mesh" type="MeshInstance3D" parent="flashlight"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.211511, -0.259647, -0.308197)
-visible = false
 mesh = ExtResource("2_odq7y")
 skeleton = NodePath("../..")
 

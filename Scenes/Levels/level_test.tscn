@@ -1,8 +1,14 @@
-[gd_scene load_steps=13 format=3 uid="uid://22m6ag8jju4h"]
+[gd_scene load_steps=19 format=3 uid="uid://22m6ag8jju4h"]
 
 [ext_resource type="PackedScene" uid="uid://na7jym7y70g2" path="res://Scenes/player.tscn" id="1_cjxgb"]
-[ext_resource type="PackedScene" uid="uid://qhm3ou8hungo" path="res://Scenes/flashlight_pickup.tscn" id="2_asws2"]
-[ext_resource type="PackedScene" uid="uid://cblqwe7xuqd3c" path="res://Scenes/basic_door.tscn" id="4_qkmes"]
+[ext_resource type="PackedScene" uid="uid://qhm3ou8hungo" path="res://Scenes/Flashlight/flashlight_pickup.tscn" id="2_asws2"]
+[ext_resource type="PackedScene" uid="uid://emd85imyecko" path="res://Scenes/Doors/front_gate_door.tscn" id="4_gm2ak"]
+[ext_resource type="PackedScene" uid="uid://cblqwe7xuqd3c" path="res://Scenes/Doors/basic_door.tscn" id="4_qkmes"]
+[ext_resource type="PackedScene" uid="uid://yb8ailb738p0" path="res://Scenes/Doors/garden_door.tscn" id="5_gm2ak"]
+[ext_resource type="PackedScene" uid="uid://3dsqu2n0msq0" path="res://Scenes/Keys/garden_door_key.tscn" id="6_1bsl4"]
+[ext_resource type="PackedScene" uid="uid://co2dsk7h6t6p4" path="res://Scenes/Doors/shack_door.tscn" id="7_fmmsx"]
+[ext_resource type="PackedScene" uid="uid://dnflfu7m5nme7" path="res://Scenes/Keys/shack_door_lock_key.tscn" id="8_c3dre"]
+[ext_resource type="PackedScene" uid="uid://4nuwi3k8f7sc" path="res://Scenes/Safe/safe.tscn" id="9_n7phb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xad5u"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -20,7 +26,7 @@ glow_enabled = true
 [sub_resource type="BoxMesh" id="BoxMesh_xawdm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ojicq"]
-size = Vector3(20, 1, 20)
+size = Vector3(27.4083, 1, 20)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ojicq"]
 
@@ -42,14 +48,15 @@ shadow_enabled = true
 environment = SubResource("Environment_m3j3i")
 
 [node name="floor" type="StaticBody3D" parent="."]
-transform = Transform3D(1.61, 0, 0, 0, 1.61, 0, 0, 0, 1.61, 7.5474, 0, 3.17658)
+transform = Transform3D(1.61, 0, 0, 0, 1.61, 0, 0, 0, 1.61, 14.5169, -9.53674e-07, 3.20697)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="floor"]
-transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, 0, 0)
+transform = Transform3D(27.1216, 0, 0, 0, 1, 0, 0, 0, 20, 0, 0, 0)
 mesh = SubResource("BoxMesh_xawdm")
 skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.094635, 0, 0)
 shape = SubResource("BoxShape3D_ojicq")
 
 [node name="Wall_01" type="StaticBody3D" parent="."]
@@ -71,6 +78,33 @@ mesh = SubResource("BoxMesh_i7j31")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_o2pfi")
 
+[node name="StaticBody3D2" type="StaticBody3D" parent="."]
+transform = Transform3D(0.126424, 0, 0.991976, 0, 1, 0, -0.991976, 0, 0.126424, 25.7014, 1.23101, -1.94697)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D2"]
+mesh = SubResource("BoxMesh_i7j31")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2"]
+shape = SubResource("BoxShape3D_o2pfi")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="StaticBody3D2"]
+transform = Transform3D(-0.100084, 0, 0.99498, 0, 1, 0, -0.99498, 0, -0.100084, 0.324328, 0.00941145, 4.52465)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D2/StaticBody3D2"]
+mesh = SubResource("BoxMesh_i7j31")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2/StaticBody3D2"]
+shape = SubResource("BoxShape3D_o2pfi")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.6226, 1.26562, 5.6569)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D3"]
+mesh = SubResource("BoxMesh_i7j31")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3"]
+shape = SubResource("BoxShape3D_o2pfi")
+
 [node name="player_node" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25029, 2.98939, 4.82126)
 
@@ -80,4 +114,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25029, 2.98939, 4.82126)
 transform = Transform3D(0.0647413, 0, 0.997902, 0, 1, 0, -0.997902, 0, 0.0647413, -5.77297, 1.7601, 2.04046)
 
 [node name="door" parent="." instance=ExtResource("4_qkmes")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9784, 0.805195, -1.93284)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9612, 0.805195, -1.9242)
+
+[node name="front_gate_door" parent="." instance=ExtResource("4_gm2ak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6152, 2.22099, -1.95338)
+
+[node name="garden_door" parent="." instance=ExtResource("5_gm2ak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9677, 1.82873, -1.61569)
+
+[node name="garden_door_key" parent="." instance=ExtResource("6_1bsl4")]
+transform = Transform3D(0.991273, 0.124114, -0.0444291, 0.0201658, 0.190295, 0.98152, 0.130275, -0.97385, 0.186131, 25.6852, 1.74727, -1.84895)
+
+[node name="shack_door" parent="." instance=ExtResource("7_fmmsx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.1937, 2.0539, -1.50248)
+
+[node name="shack_door_lock_key" parent="." instance=ExtResource("8_c3dre")]
+transform = Transform3D(1, 0, 0, 0, 0.0241879, 0.999707, 0, -0.999707, 0.0241879, 29.9374, 1.74438, -1.37204)
+
+[node name="safe" parent="." instance=ExtResource("9_n7phb")]
+transform = Transform3D(-0.999382, 0, 0.0351612, 0, 1, 0, -0.0351612, 0, -0.999382, 12.6898, 1.9405, 5.43586)

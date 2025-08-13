@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1ovegk1o03x4"
-path.s3tc="res://.godot/imported/flashlight_texture.png-29ab206b3a4761514ac72095f9261e41.s3tc.ctex"
+uid="uid://ce3uhd1fsop6t"
+path.s3tc="res://.godot/imported/numbers.jpg-4dc3bee94cdfe2a584753583766ae6ae.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Models/Textures/flashlight_texture.png"
-dest_files=["res://.godot/imported/flashlight_texture.png-29ab206b3a4761514ac72095f9261e41.s3tc.ctex"]
+source_file="res://Models/Textures/Safe/numbers.jpg"
+dest_files=["res://.godot/imported/numbers.jpg-4dc3bee94cdfe2a584753583766ae6ae.s3tc.ctex"]
 
 [params]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://cblqwe7xuqd3c"]
+[gd_scene load_steps=34 format=4 uid="uid://cblqwe7xuqd3c"]
 
 [ext_resource type="Script" uid="uid://bv60kedivkojn" path="res://Scripts/Basic Door/basic_door_detect.gd" id="1_5xtjl"]
 [ext_resource type="Script" uid="uid://dpicsqqaffkku" path="res://Scripts/Basic Door/basic_door_open.gd" id="1_o668t"]
@@ -268,6 +268,30 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector3(0, 0, 0)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("basic_door/door_hinge/door/door_handle:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("basic_door/door_hinge/door/door_handle_001:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 3.14159)]
+}
 
 [sub_resource type="Animation" id="Animation_o668t"]
 resource_name = "close"
@@ -282,6 +306,33 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(0, 2.0944, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_00wea"]
+resource_name = "door_handle_wiggle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("basic_door/door_hinge/door/door_handle:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333, 0.5, 0.733333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0.174533), Vector3(0, 0, 0), Vector3(0, 0, 0.174533), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("basic_door/door_hinge/door/door_handle_001:rotation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.232316, 0.50245, 0.729363, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 3.14159), Vector3(0, 0, 3.31613), Vector3(0, 0, 3.14159), Vector3(0, 0, 3.31613), Vector3(0, 0, 3.14159)]
 }
 
 [sub_resource type="Animation" id="Animation_i437e"]
@@ -303,6 +354,7 @@ tracks/0/keys = {
 _data = {
 &"RESET": SubResource("Animation_5xtjl"),
 &"close": SubResource("Animation_o668t"),
+&"door_handle_wiggle": SubResource("Animation_00wea"),
 &"open": SubResource("Animation_i437e")
 }
 
@@ -332,6 +384,7 @@ mesh = SubResource("ArrayMesh_tej1f")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="basic_door/door_hinge/door/door_handle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0147249, 2.38419e-07, 0.00507069)
 script = ExtResource("1_5xtjl")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="basic_door/door_hinge/door/door_handle/StaticBody3D"]
@@ -339,7 +392,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0586388, -0.0355498, 0.018
 shape = SubResource("BoxShape3D_5xtjl")
 
 [node name="door_handle_001" type="MeshInstance3D" parent="basic_door/door_hinge/door"]
-transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 0, 0, 0, -1, 0.486557, -0.0144668, -0.0574412)
+transform = Transform3D(1, 2.53518e-06, 0, -2.53518e-06, 1, 0, 0, 0, -1, 0.486557, -0.0144668, -0.0574412)
 mesh = SubResource("ArrayMesh_1hx4o")
 skeleton = NodePath("")
 

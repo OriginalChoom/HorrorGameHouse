@@ -13,7 +13,6 @@ config_version=5
 config/name="HorrorGameHouse"
 run/main_scene="res://Scenes/Levels/level_test.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
 
 [filesystem]
 

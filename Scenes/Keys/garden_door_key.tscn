@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://3dsqu2n0msq0"]
+
+[ext_resource type="Script" uid="uid://dc3ki65454ixv" path="res://Scripts/Garden Door/garden_door_key.gd" id="1_2utrr"]
+[ext_resource type="PackedScene" uid="uid://sm2a3brk5hde" path="res://Models/Meshes/Keys/garden_door_key.glb" id="1_byjhd"]
+[ext_resource type="Script" uid="uid://dghr0ge7c744e" path="res://Scripts/Garden Door/garden_door_key_function.gd" id="1_npon8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_byjhd"]
+size = Vector3(0.452026, 0.197021, 0.128723)
+
+[node name="garden_door_key" type="Node3D"]
+script = ExtResource("1_npon8")
+
+[node name="garden_door_key" parent="." instance=ExtResource("1_byjhd")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="garden_door_key"]
+script = ExtResource("1_2utrr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="garden_door_key/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0873413, -0.00842285, -0.00393677)
+shape = SubResource("BoxShape3D_byjhd")

@@ -1,0 +1,117 @@
+[gd_scene load_steps=27 format=3 uid="uid://bu1f4tfew460t"]
+
+[ext_resource type="ArrayMesh" uid="uid://vhn7l4boaqrk" path="res://Models/Meshes/Safe/safe_keys_panel.obj" id="1_t522v"]
+[ext_resource type="Texture2D" uid="uid://ce3uhd1fsop6t" path="res://Models/Textures/Safe/numbers.jpg" id="2_hpnbk"]
+[ext_resource type="ArrayMesh" uid="uid://c6wlxx67fqpij" path="res://Models/Meshes/Safe/Keys/safe_keys_01.obj" id="2_w1sq3"]
+[ext_resource type="ArrayMesh" uid="uid://cx8lyrrv8kwgf" path="res://Models/Meshes/Safe/Keys/safe_keys_002.obj" id="4_bo12r"]
+[ext_resource type="ArrayMesh" uid="uid://dfc40geki44i6" path="res://Models/Meshes/Safe/Keys/safe_keys_000.obj" id="5_dobqt"]
+[ext_resource type="ArrayMesh" uid="uid://c6ym6kv78jafr" path="res://Models/Meshes/Safe/Keys/safe_keys_003.obj" id="6_jyksv"]
+[ext_resource type="ArrayMesh" uid="uid://dlliqxlxe17fk" path="res://Models/Meshes/Safe/Keys/safe_keys_004.obj" id="7_ibllg"]
+[ext_resource type="ArrayMesh" uid="uid://pivedo6qwkh6" path="res://Models/Meshes/Safe/Keys/safe_keys_005.obj" id="8_06re0"]
+[ext_resource type="ArrayMesh" uid="uid://e5oq0flhpfe5" path="res://Models/Meshes/Safe/Keys/safe_keys_006.obj" id="9_bjq4j"]
+[ext_resource type="ArrayMesh" uid="uid://qji1ffuma1tr" path="res://Models/Meshes/Safe/Keys/safe_keys_007.obj" id="10_7c0e6"]
+[ext_resource type="ArrayMesh" uid="uid://hvq02fv8ww1u" path="res://Models/Meshes/Safe/Keys/safe_keys_008.obj" id="11_rk6aw"]
+[ext_resource type="ArrayMesh" uid="uid://bsf5s7ha4ydyq" path="res://Models/Meshes/Safe/Keys/safe_keys_009.obj" id="12_q868b"]
+[ext_resource type="ArrayMesh" uid="uid://bx4kxsuub4yki" path="res://Models/Meshes/Safe/Keys/safe_keys_c.obj" id="13_u5071"]
+[ext_resource type="ArrayMesh" uid="uid://b0mdiaid3jlju" path="res://Models/Meshes/Safe/Keys/safe_keys_e.obj" id="14_nioob"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bo12r"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mhw24"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j2wj3"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hvwx2"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vi8r"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_30rp3"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7tw8x"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_olmun"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qw861"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kpjhg"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_73tqa"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vb6l8"]
+albedo_texture = ExtResource("2_hpnbk")
+
+[node name="keypad" type="Node3D"]
+
+[node name="SafeKeysPanel" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_t522v")
+
+[node name="SafeKeys01" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_bo12r")
+mesh = ExtResource("2_w1sq3")
+skeleton = NodePath("../..")
+
+[node name="SafeKeys002" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_mhw24")
+mesh = ExtResource("4_bo12r")
+skeleton = NodePath("../..")
+
+[node name="SafeKeys000" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_j2wj3")
+mesh = ExtResource("5_dobqt")
+skeleton = NodePath("../..")
+
+[node name="SafeKeys003" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_hvwx2")
+mesh = ExtResource("6_jyksv")
+skeleton = NodePath("../..")
+
+[node name="SafeKeys004" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_5vi8r")
+mesh = ExtResource("7_ibllg")
+skeleton = NodePath("../..")
+
+[node name="SafeKeys005" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_30rp3")
+mesh = ExtResource("8_06re0")
+skeleton = NodePath("../..")
+
+[node name="SafeKeys006" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_7tw8x")
+mesh = ExtResource("9_bjq4j")
+skeleton = NodePath("../..")
+
+[node name="SafeKeys007" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_olmun")
+mesh = ExtResource("10_7c0e6")
+skeleton = NodePath("../..")
+
+[node name="SafeKeys008" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_qw861")
+mesh = ExtResource("11_rk6aw")
+skeleton = NodePath("../..")
+
+[node name="SafeKeys009" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_kpjhg")
+mesh = ExtResource("12_q868b")
+skeleton = NodePath("../..")
+
+[node name="SafeKeysC" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_73tqa")
+mesh = ExtResource("13_u5071")
+skeleton = NodePath("../..")
+
+[node name="SafeKeysE" type="MeshInstance3D" parent="SafeKeysPanel"]
+material_override = SubResource("StandardMaterial3D_vb6l8")
+mesh = ExtResource("14_nioob")
+skeleton = NodePath("../..")
