@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://1nootifq4kj8"]
+
+[ext_resource type="Texture2D" uid="uid://d3ljw13f8qdw7" path="res://Models/Textures/Garden Door Key/Metal053B_2K-JPG_Color.jpg" id="1_wydn1"]
+[ext_resource type="Texture2D" uid="uid://dd8qrrj420cka" path="res://Models/Textures/Garden Door Key/Metal053B_2K-JPG_Displacement.jpg" id="2_hg4lp"]
+[ext_resource type="Texture2D" uid="uid://dsitfrykhn4l3" path="res://Models/Textures/Garden Door Key/Metal053B_2K-JPG_Metalness.jpg" id="3_1slkr"]
+[ext_resource type="Texture2D" uid="uid://8s14fyofr15m" path="res://Models/Textures/Garden Door Key/Metal053B_2K-JPG_NormalGL.jpg" id="4_ut8ca"]
+[ext_resource type="Texture2D" uid="uid://d0j5icecgglkq" path="res://Models/Textures/Garden Door Key/Metal053B_2K-JPG_Roughness.jpg" id="5_31cvv"]
+
+[resource]
+albedo_texture = ExtResource("1_wydn1")
+metallic = 1.0
+metallic_texture = ExtResource("3_1slkr")
+roughness_texture = ExtResource("5_31cvv")
+normal_enabled = true
+normal_scale = 10.38
+normal_texture = ExtResource("4_ut8ca")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_hg4lp")

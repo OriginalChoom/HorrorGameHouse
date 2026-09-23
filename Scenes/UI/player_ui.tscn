@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://lmb18bx0qpu3"]
+
+[ext_resource type="Script" uid="uid://bnfeesw3mvdfb" path="res://Scripts/Player/player_ui.gd" id="1_8n2hl"]
+[ext_resource type="Texture2D" uid="uid://cafgmqki6bbjg" path="res://Models/Textures/Ui/crosshair-6x6.png" id="1_xnwvs"]
+[ext_resource type="Texture2D" uid="uid://73vvxf228r8c" path="res://Models/Textures/Ui/Crosshair.png" id="2_7jiju"]
+[ext_resource type="PackedScene" uid="uid://brjjspyvm6p5f" path="res://Scenes/UI/pause_menu.tscn" id="3_t3flm"]
+[ext_resource type="PackedScene" uid="uid://btv0k75quqnys" path="res://Scenes/UI/safe_ui.tscn" id="4_c4arg"]
+
+[node name="player_ui" type="Control" unique_id=955576963]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8n2hl")
+
+[node name="crosshair" type="CanvasLayer" parent="." unique_id=668046575]
+
+[node name="crosshair_centar" type="CenterContainer" parent="crosshair" unique_id=899406266]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="crosshair_texture" type="TextureRect" parent="crosshair/crosshair_centar" unique_id=490815061]
+layout_mode = 2
+texture = ExtResource("1_xnwvs")
+
+[node name="crosshair_centar_hand" type="CenterContainer" parent="crosshair" unique_id=1336199527]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="crosshair_texture_hand" type="TextureRect" parent="crosshair/crosshair_centar_hand" unique_id=1889272313]
+layout_mode = 2
+texture = ExtResource("2_7jiju")
+
+[node name="safe_ui" parent="." unique_id=1927107036 instance=ExtResource("4_c4arg")]
+visible = false
+
+[node name="safe_pass" parent="safe_ui" index="3" unique_id=1926746825]
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_type = 2
+
+[node name="pause_menu" parent="." unique_id=1907535591 instance=ExtResource("3_t3flm")]
+
+[connection signal="pressed" from="safe_ui/button_confirm" to="." method="confirm_safe_password"]
+[connection signal="pressed" from="safe_ui/button_exit" to="." method="exit_safe"]
+[connection signal="pressed" from="pause_menu/button_resume" to="." method="resume_game"]
+[connection signal="pressed" from="pause_menu/button_quit" to="." method="quit_game"]
+
+[editable path="safe_ui"]
+[editable path="pause_menu"]

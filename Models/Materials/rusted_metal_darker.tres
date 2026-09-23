@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b6uk4t35vsahm"]
+
+[ext_resource type="Texture2D" uid="uid://b8q6jk8rvlep5" path="res://Models/Textures/Metal/Rust Metal Darker/rusty_metal_05_arm_1k.jpg" id="1_gyemp"]
+[ext_resource type="Texture2D" uid="uid://cfb5sqfxedh21" path="res://Models/Textures/Metal/Rust Metal Darker/rusty_metal_05_diff_1k.jpg" id="2_1yl8x"]
+[ext_resource type="Texture2D" uid="uid://cjcinqvmhccyd" path="res://Models/Textures/Metal/Rust Metal Darker/rusty_metal_05_disp_1k.jpg" id="3_1yl8x"]
+[ext_resource type="Texture2D" uid="uid://bi2sfyv31p7jt" path="res://Models/Textures/Metal/Rust Metal Darker/rusty_metal_05_nor_gl_1k.jpg" id="3_4hsc3"]
+
+[resource]
+albedo_texture = ExtResource("2_1yl8x")
+metallic = 1.0
+metallic_texture = ExtResource("1_gyemp")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("1_gyemp")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_4hsc3")
+ao_enabled = true
+ao_texture = ExtResource("1_gyemp")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_1yl8x")

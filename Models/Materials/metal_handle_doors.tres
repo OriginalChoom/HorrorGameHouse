@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b60ptfffgyna4"]
+
+[ext_resource type="Texture2D" uid="uid://xqy1q8nkl2xi" path="res://Models/Textures/Door Handle/Metal055A_2K-JPG_Color.jpg" id="1_imbou"]
+[ext_resource type="Texture2D" uid="uid://cu4061yo0xmgj" path="res://Models/Textures/Door Handle/Metal055A_2K-JPG_Displacement.jpg" id="2_4e6nx"]
+[ext_resource type="Texture2D" uid="uid://br82m7nitw4oj" path="res://Models/Textures/Door Handle/Metal055A_2K-JPG_Metalness.jpg" id="3_rqdnd"]
+[ext_resource type="Texture2D" uid="uid://cmnx8nkmc2pmr" path="res://Models/Textures/Door Handle/Metal055A_2K-JPG_NormalGL.jpg" id="4_7v1ie"]
+[ext_resource type="Texture2D" uid="uid://ds6v6h4nwquxl" path="res://Models/Textures/Door Handle/Metal055A_2K-JPG_Roughness.jpg" id="5_bvha4"]
+
+[resource]
+albedo_texture = ExtResource("1_imbou")
+metallic = 1.0
+metallic_texture = ExtResource("3_rqdnd")
+roughness_texture = ExtResource("5_bvha4")
+normal_enabled = true
+normal_texture = ExtResource("4_7v1ie")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_4e6nx")

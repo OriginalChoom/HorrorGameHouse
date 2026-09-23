@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ccrukg3jpt7m1"]
+
+[ext_resource type="Texture2D" uid="uid://dl6ckpn826gwx" path="res://Models/Textures/Swiming Pool/Swiming Dirty/Tiles020_2K-JPG_Color.jpg" id="1_3041w"]
+[ext_resource type="Texture2D" uid="uid://c12v0nfpb6bat" path="res://Models/Textures/Swiming Pool/Swiming Dirty/Tiles020_2K-JPG_NormalGL.jpg" id="2_yi8st"]
+[ext_resource type="Texture2D" uid="uid://bop7pudjsegxg" path="res://Models/Textures/Swiming Pool/Swiming Dirty/Tiles020_2K-JPG_Roughness.jpg" id="3_eeba6"]
+
+[resource]
+albedo_texture = ExtResource("1_3041w")
+roughness_texture = ExtResource("3_eeba6")
+normal_enabled = true
+normal_texture = ExtResource("2_yi8st")

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cotapccv1gon3"]
+
+[ext_resource type="PackedScene" uid="uid://bysdwpyogaawi" path="res://Models/Meshes/Mansion/mansion_pool.blend" id="1_ahwhl"]
+[ext_resource type="Material" uid="uid://ccrukg3jpt7m1" path="res://Models/Materials/Swiming Pool/swiming_dirty.tres" id="2_qdbf3"]
+[ext_resource type="Material" uid="uid://b7grk700g1t8l" path="res://Models/Materials/front_gate_cracked_wall.tres" id="3_ssfnu"]
+[ext_resource type="Material" uid="uid://bf01tla5mhlty" path="res://Models/Materials/metal_not_clear_handle.tres" id="4_vv7uf"]
+
+[node name="swiming_pool" type="Node3D" unique_id=1931782335]
+
+[node name="mansion_pool" parent="." unique_id=693562621 instance=ExtResource("1_ahwhl")]
+
+[node name="pool" parent="mansion_pool" index="0" unique_id=1003205635]
+surface_material_override/0 = ExtResource("2_qdbf3")
+surface_material_override/1 = ExtResource("3_ssfnu")
+
+[node name="pool_floor" parent="mansion_pool" index="1" unique_id=62847852]
+surface_material_override/0 = ExtResource("2_qdbf3")
+
+[node name="stairs" parent="mansion_pool" index="3" unique_id=1019237361]
+surface_material_override/0 = ExtResource("4_vv7uf")
+
+[editable path="mansion_pool"]

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bnul1ypsj5iil"]
+
+[ext_resource type="PackedScene" uid="uid://dejx1kwbn4osx" path="res://Models/Meshes/Mansion/mansion_walkway_slab.blend" id="1_ul5yy"]
+
+[node name="mansion_walkway_slab" type="Node3D" unique_id=486914565]
+
+[node name="mansion_walkway_slab" parent="." unique_id=773568528 instance=ExtResource("1_ul5yy")]

@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://34tg4b6gfq8c"]
+
+[ext_resource type="Texture2D" uid="uid://c58glipjfh1ty" path="res://Models/Textures/Outside Walls/Concrete Wall/concrete_brick_wall_001_diffuse_2k.jpg" id="1_nd8ak"]
+[ext_resource type="Texture2D" uid="uid://bssrw4jc8wnxh" path="res://Models/Textures/Outside Walls/Concrete Wall/concrete_brick_wall_001_arm_2k.jpg" id="2_7ivy6"]
+[ext_resource type="Texture2D" uid="uid://c110ykxy0uo7d" path="res://Models/Textures/Outside Walls/Concrete Wall/concrete_brick_wall_001_nor_gl_2k.jpg" id="3_v8bid"]
+
+[resource]
+albedo_texture = ExtResource("1_nd8ak")
+metallic = 1.0
+metallic_texture = ExtResource("2_7ivy6")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_7ivy6")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_v8bid")
+ao_enabled = true
+ao_texture = ExtResource("2_7ivy6")

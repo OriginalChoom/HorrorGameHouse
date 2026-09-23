@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bgjhat4n4u3cx"]
+
+[ext_resource type="PackedScene" uid="uid://cuw7lhoukyptv" path="res://Models/Meshes/Mansion/mansion_windows.blend" id="1_42o1c"]
+[ext_resource type="Material" uid="uid://cnb20tbiwbedg" path="res://Models/Materials/window_glass.tres" id="2_873qx"]
+
+[node name="mansion_windows" type="Node3D" unique_id=1842845140]
+
+[node name="mansion_windows" parent="." unique_id=1898350483 instance=ExtResource("1_42o1c")]
+
+[node name="windows_all" parent="mansion_windows" index="0" unique_id=1871287721]
+surface_material_override/0 = ExtResource("2_873qx")
+
+[editable path="mansion_windows"]

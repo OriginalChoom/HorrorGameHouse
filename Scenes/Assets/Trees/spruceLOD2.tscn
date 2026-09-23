@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://xruqf7a3moym"]
+
+[ext_resource type="PackedScene" uid="uid://llh0dww5nys4" path="res://Models/Meshes/Outside/Foliage/Trees/spruceLOD2.blend" id="1_jj16h"]
+[ext_resource type="ArrayMesh" uid="uid://5sbf5i17d3r4" path="res://Models/Meshes/Outside/Foliage/Trees/Trees .tres/spruceLOD2.tres" id="2_1pk4u"]
+[ext_resource type="Material" uid="uid://2ie351p8ck08" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce_bark.tres" id="6_makml"]
+[ext_resource type="Material" uid="uid://b0yr4mky0dko" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce_branch1.tres" id="7_qy31n"]
+[ext_resource type="Material" uid="uid://makwrw5d80yb" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce_branch2.tres" id="8_y2dmq"]
+[ext_resource type="Material" uid="uid://bi2l138abcfpr" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce_branch3.tres" id="9_c8mc5"]
+
+[node name="tree" type="Node3D" unique_id=1473431074]
+
+[node name="spruceLOD2" parent="." unique_id=418806453 instance=ExtResource("1_jj16h")]
+
+[node name="tree" parent="spruceLOD2" index="0" unique_id=741941375]
+mesh = ExtResource("2_1pk4u")
+surface_material_override/0 = ExtResource("6_makml")
+surface_material_override/1 = ExtResource("7_qy31n")
+surface_material_override/2 = ExtResource("8_y2dmq")
+surface_material_override/3 = ExtResource("9_c8mc5")
+
+[editable path="spruceLOD2"]

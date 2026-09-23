@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b83fakwah5hf6"]
+
+[ext_resource type="ArrayMesh" uid="uid://co045sckw1lpt" path="res://Models/Meshes/Outside/Foliage/Trees/Trees .tres/spruceLOD0.tres" id="1_76qr0"]
+[ext_resource type="Material" uid="uid://2ie351p8ck08" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce_bark.tres" id="2_omeqn"]
+[ext_resource type="Material" uid="uid://b2knr7mqvdd23" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce_stump.tres" id="3_21q8i"]
+[ext_resource type="Material" uid="uid://b0yr4mky0dko" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce_branch1.tres" id="4_r4far"]
+[ext_resource type="Material" uid="uid://makwrw5d80yb" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce_branch2.tres" id="5_0fysk"]
+[ext_resource type="Material" uid="uid://bi2l138abcfpr" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce_branch3.tres" id="6_vxx0u"]
+
+[node name="tree" type="Node3D" unique_id=1462471883]
+
+[node name="spruceLOD0" type="Node3D" parent="." unique_id=453512355]
+
+[node name="tree" type="MeshInstance3D" parent="spruceLOD0" unique_id=1437476890]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.9999978, 0, 0, 0)
+mesh = ExtResource("1_76qr0")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("2_omeqn")
+surface_material_override/1 = ExtResource("3_21q8i")
+surface_material_override/2 = ExtResource("4_r4far")
+surface_material_override/3 = ExtResource("5_0fysk")
+surface_material_override/4 = ExtResource("6_vxx0u")

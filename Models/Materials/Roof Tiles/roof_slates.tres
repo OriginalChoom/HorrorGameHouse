@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://g8xodm12o2yw"]
+
+[ext_resource type="Texture2D" uid="uid://cn75adrnaqj0j" path="res://Models/Textures/Roof/roof slates/roof_slates_03_diff_1k.jpg" id="1_gl1bk"]
+[ext_resource type="Texture2D" uid="uid://ccd1tp2kv2geo" path="res://Models/Textures/Roof/roof slates/roof_slates_03_arm_1k.jpg" id="2_mn4f4"]
+[ext_resource type="Texture2D" uid="uid://bgqccmjlwidsh" path="res://Models/Textures/Roof/roof slates/roof_slates_03_nor_gl_1k.jpg" id="3_vrucy"]
+
+[resource]
+albedo_texture = ExtResource("1_gl1bk")
+metallic = 1.0
+metallic_texture = ExtResource("2_mn4f4")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_mn4f4")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_vrucy")
+ao_enabled = true
+ao_texture = ExtResource("2_mn4f4")

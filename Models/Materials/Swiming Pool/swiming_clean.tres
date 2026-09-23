@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cpbrlnoo1k5pd"]
+
+[ext_resource type="Texture2D" uid="uid://dey7q2lrjy0ug" path="res://Models/Textures/Swiming Pool/Swiming Clear/Tiles132A_2K-JPG_Color.jpg" id="1_1m1d5"]
+[ext_resource type="Texture2D" uid="uid://opn74oxa6muh" path="res://Models/Textures/Swiming Pool/Swiming Clear/Tiles132A_2K-JPG_AmbientOcclusion.jpg" id="2_4ilua"]
+[ext_resource type="Texture2D" uid="uid://baotim8bbub5a" path="res://Models/Textures/Swiming Pool/Swiming Clear/Tiles132A_2K-JPG_NormalGL.jpg" id="3_6uvv1"]
+[ext_resource type="Texture2D" uid="uid://cmqkrtej502tp" path="res://Models/Textures/Swiming Pool/Swiming Clear/Tiles132A_2K-JPG_Roughness.jpg" id="4_x0h3x"]
+
+[resource]
+albedo_texture = ExtResource("1_1m1d5")
+roughness_texture = ExtResource("4_x0h3x")
+normal_enabled = true
+normal_texture = ExtResource("3_6uvv1")
+ao_enabled = true
+ao_texture = ExtResource("2_4ilua")

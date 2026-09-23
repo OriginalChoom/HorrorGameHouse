@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://d1h7drodilspi"]
+
+[ext_resource type="PackedScene" uid="uid://cnenr6f8yxooo" path="res://Models/Meshes/Mansion/mansion_first_floor_big_window.blend" id="1_pvhg4"]
+[ext_resource type="Material" uid="uid://cnb20tbiwbedg" path="res://Models/Materials/window_glass.tres" id="2_epd43"]
+
+[node name="mansion_big_window" type="Node3D" unique_id=1035318940]
+
+[node name="mansion_first_floor_big_window" parent="." unique_id=905010455 instance=ExtResource("1_pvhg4")]
+
+[node name="window" parent="mansion_first_floor_big_window" index="1" unique_id=1722337434]
+surface_material_override/0 = ExtResource("2_epd43")
+
+[editable path="mansion_first_floor_big_window"]

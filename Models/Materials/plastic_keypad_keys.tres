@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://mxd4qx5x8y6v"]
+
+[ext_resource type="Texture2D" uid="uid://dif0n0nu1xdo2" path="res://Models/Textures/Safe/Plastic/Plastic Keypad Keys/Plastic012B_1K-JPG_Color.jpg" id="1_5ks62"]
+[ext_resource type="Texture2D" uid="uid://cf8caems44ir8" path="res://Models/Textures/Safe/Plastic/Plastic Keypad Keys/Plastic012B_1K-JPG_NormalGL.jpg" id="2_pqs1w"]
+[ext_resource type="Texture2D" uid="uid://cs3eshg6kyded" path="res://Models/Textures/Safe/Plastic/Plastic Keypad Keys/Plastic012B_1K-JPG_Roughness.jpg" id="3_5ueay"]
+
+[resource]
+albedo_texture = ExtResource("1_5ks62")
+roughness_texture = ExtResource("3_5ueay")
+normal_enabled = true
+normal_texture = ExtResource("2_pqs1w")

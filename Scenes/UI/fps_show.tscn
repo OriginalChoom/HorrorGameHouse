@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bcvs330ha0ejo"]
+
+[ext_resource type="Script" uid="uid://cyrxnyft2iwcp" path="res://Scripts/Player/fps_meter.gd" id="1_twagf"]
+
+[node name="fps_meter" type="Control" unique_id=674458522]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=182981352]
+
+[node name="FPS_Meter" type="Label" parent="CanvasLayer" unique_id=855280026]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("1_twagf")

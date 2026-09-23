@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b3vsbiq0sjcpk"]
+
+[ext_resource type="Texture2D" uid="uid://b1govl7m41yrc" path="res://Models/Textures/Roof/gray roof tiles/grey_roof_tiles_02_diff_1k.jpg" id="1_1ignn"]
+[ext_resource type="Texture2D" uid="uid://dxsyotsfnbjli" path="res://Models/Textures/Roof/gray roof tiles/grey_roof_tiles_02_arm_1k.jpg" id="2_s00b8"]
+[ext_resource type="Texture2D" uid="uid://m0aaqx6elqn1" path="res://Models/Textures/Roof/gray roof tiles/grey_roof_tiles_02_nor_gl_1k.jpg" id="3_7ycys"]
+
+[resource]
+albedo_texture = ExtResource("1_1ignn")
+metallic = 1.0
+metallic_texture = ExtResource("2_s00b8")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_s00b8")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_7ycys")
+ao_enabled = true
+ao_texture = ExtResource("2_s00b8")

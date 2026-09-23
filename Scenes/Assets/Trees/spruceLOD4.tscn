@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://h11h1pryqnug"]
+
+[ext_resource type="PackedScene" uid="uid://dj4evc6yquno8" path="res://Models/Meshes/Outside/Foliage/Trees/spruceLOD4.blend" id="1_mcqrg"]
+[ext_resource type="ArrayMesh" uid="uid://b7wm31ja4bq1g" path="res://Models/Meshes/Outside/Foliage/Trees/Trees .tres/spruceLOD4.tres" id="2_pxpmm"]
+[ext_resource type="Material" uid="uid://cgteofdufpfjg" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce_imposter.tres" id="3_eoir1"]
+
+[node name="tree" type="Node3D" unique_id=490388]
+
+[node name="spruceLOD4" parent="." unique_id=888073579 instance=ExtResource("1_mcqrg")]
+
+[node name="tree" parent="spruceLOD4" index="0" unique_id=1004182526]
+mesh = ExtResource("2_pxpmm")
+surface_material_override/0 = ExtResource("3_eoir1")
+
+[editable path="spruceLOD4"]

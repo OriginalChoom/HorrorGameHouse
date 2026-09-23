@@ -1,0 +1,52 @@
+# Blender 5.1.1 MTL File: 'spruceLOD0.blend'
+# www.blender.org
+
+newmtl bark06
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/bark06.png
+map_Ns C:/bark06_roughness.png
+
+newmtl spruce_branch_1
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/spruce branch 1.png
+map_Ns C:/spruce branch 1_Roughness.png
+map_d C:/spruce branch 1.png
+
+newmtl spruce_branch_2
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/spruce branch 2.png
+map_d C:/spruce branch 2.png
+
+newmtl spruce_branch_3
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/spruce branch 3.png
+map_d C:/spruce branch 3.png
+
+newmtl stump03
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/stump03.png
+map_Ns C:/stump03_roughness.png

@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://btl57vtt7rl0s"]
+
+[ext_resource type="Texture2D" uid="uid://d38ifmxgwk1oy" path="res://Models/Textures/Metal/Very Much Rust/Metal054C_1K-JPG_Color.jpg" id="1_y0f48"]
+[ext_resource type="Texture2D" uid="uid://crki7g3v0p4p7" path="res://Models/Textures/Metal/Very Much Rust/Metal054C_1K-JPG_Displacement.jpg" id="2_t76oi"]
+[ext_resource type="Texture2D" uid="uid://d1rw78ndd7qeg" path="res://Models/Textures/Metal/Very Much Rust/Metal054C_1K-JPG_Metalness.jpg" id="2_wcwfv"]
+[ext_resource type="Texture2D" uid="uid://dyu2qcbkyygpb" path="res://Models/Textures/Metal/Very Much Rust/Metal054C_1K-JPG_NormalGL.jpg" id="3_t76oi"]
+[ext_resource type="Texture2D" uid="uid://dsey04826ts0i" path="res://Models/Textures/Metal/Very Much Rust/Metal054C_1K-JPG_Roughness.jpg" id="4_g3my6"]
+
+[resource]
+albedo_texture = ExtResource("1_y0f48")
+metallic = 1.0
+metallic_texture = ExtResource("2_wcwfv")
+roughness_texture = ExtResource("4_g3my6")
+normal_enabled = true
+normal_texture = ExtResource("3_t76oi")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_t76oi")

@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://dvd80mq3wulwx"]
+
+[ext_resource type="PackedScene" uid="uid://dq2oecnkv6ayi" path="res://Models/Meshes/Mansion/mansion_front_door.blend" id="1_lgi2i"]
+[ext_resource type="Script" uid="uid://7urk50cpqsed" path="res://Scripts/Mansion/mansion_door.gd" id="1_uwdvt"]
+[ext_resource type="Script" uid="uid://bvtvppt78tx6o" path="res://Scripts/Mansion/mansion_door_knob.gd" id="2_djjsn"]
+[ext_resource type="Script" uid="uid://b6f4tx6nivl65" path="res://Scripts/Mansion/mansion_door_lock.gd" id="4_uwdvt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uy7eo"]
+size = Vector3(1.6378174, 4.131714, 0.16723633)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uwdvt"]
+size = Vector3(0.06542969, 0.70336914, 0.39523315)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_djjsn"]
+size = Vector3(0.059936523, 0.13317871, 0.36036682)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oqsi4"]
+size = Vector3(1.6320801, 4.140869, 0.16662598)
+
+[sub_resource type="Animation" id="Animation_djjsn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mansion_front_door/front_door_right:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5gaaa"]
+resource_name = "mansion_door_open"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mansion_front_door/front_door_right:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -1.2653637, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_djjsn"]
+_data = {
+&"RESET": SubResource("Animation_djjsn"),
+&"mansion_door_open": SubResource("Animation_5gaaa")
+}
+
+[node name="mansion_door" type="Node3D" unique_id=581530037]
+script = ExtResource("1_uwdvt")
+
+[node name="mansion_front_door" parent="." unique_id=1936866061 instance=ExtResource("1_lgi2i")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="mansion_front_door/front_door_left" parent_id_path=PackedInt32Array(1936866061, 1510522596) index="0" unique_id=1355501136]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mansion_front_door/front_door_left/StaticBody3D" unique_id=1443463507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.82366943, -0.121398926, -0.076293945)
+shape = SubResource("BoxShape3D_uy7eo")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="mansion_front_door/front_door_right/door_knob" parent_id_path=PackedInt32Array(1936866061, 1191582704) index="0" unique_id=1637478173]
+script = ExtResource("2_djjsn")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="mansion_front_door/front_door_right/door_knob/StaticBody3D" unique_id=359885081]
+transform = Transform3D(1, 8.742278e-08, 6.2783295e-07, 8.742278e-08, -1, 0, 6.2783295e-07, 5.4886898e-14, -1, -0.0008914992, -0.32899427, -0.08251616)
+shape = SubResource("BoxShape3D_uwdvt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="mansion_front_door/front_door_right/door_lock" parent_id_path=PackedInt32Array(1936866061, 434095049) index="0" unique_id=734544909]
+script = ExtResource("4_uwdvt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mansion_front_door/front_door_right/door_lock/StaticBody3D" unique_id=1690445077]
+transform = Transform3D(1, 8.742278e-08, 1.3430887e-06, 8.742278e-08, -1, 0, 1.3430887e-06, 1.1741655e-13, -1, -0.001196742, 0.0001282692, -0.15091214)
+shape = SubResource("BoxShape3D_djjsn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="mansion_front_door/front_door_right" parent_id_path=PackedInt32Array(1936866061, 1337050439) index="2" unique_id=1432594440]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mansion_front_door/front_door_right/StaticBody3D" unique_id=1885471385]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8522345, 0.17443848, -0.077941895)
+shape = SubResource("BoxShape3D_oqsi4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=971815042]
+libraries/ = SubResource("AnimationLibrary_djjsn")
+
+[editable path="mansion_front_door"]

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bejfgqqv3oe8c"]
+
+[ext_resource type="PackedScene" uid="uid://meoscfmbcwew" path="res://Models/Meshes/Mansion/mansion_second_floor_terasa_door.blend" id="1_7bgbi"]
+
+[node name="mansion_second_floor_terasa_door" type="Node3D" unique_id=550473346]
+
+[node name="mansion_second_floor_terasa_door" parent="." unique_id=1405741232 instance=ExtResource("1_7bgbi")]

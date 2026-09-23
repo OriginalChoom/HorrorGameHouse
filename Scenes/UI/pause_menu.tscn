@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://brjjspyvm6p5f"]
+
+[ext_resource type="Shader" uid="uid://0pu4xyw0qkhk" path="res://Shaders/blur.gdshader" id="1_rrvs5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8rf44"]
+shader = ExtResource("1_rrvs5")
+shader_parameter/blur_amount = 1.5
+
+[node name="pause_menu" type="CanvasLayer" unique_id=1907535591]
+
+[node name="blur" type="ColorRect" parent="." unique_id=1563266691]
+material = SubResource("ShaderMaterial_8rf44")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="button_resume" type="Button" parent="." unique_id=1778499224]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -62.0
+offset_top = 205.0
+offset_right = 62.0
+offset_bottom = 255.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Resume"
+
+[node name="button_settings" type="Button" parent="." unique_id=220445533]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -62.0
+offset_top = 269.0
+offset_right = 62.0
+offset_bottom = 319.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Settings"
+
+[node name="button_main_menu" type="Button" parent="." unique_id=1023000010]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -62.0
+offset_top = 334.0
+offset_right = 62.0
+offset_bottom = 384.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Main Menu"
+
+[node name="button_quit" type="Button" parent="." unique_id=1881709595]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -82.0
+offset_top = 402.0
+offset_right = 82.0
+offset_bottom = 452.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Quit Game"
+
+[node name="text_game_paused" type="RichTextLabel" parent="." unique_id=928172807]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 105.0
+offset_bottom = -473.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[center]GAME PAUSED"

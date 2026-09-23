@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://btv0k75quqnys"]
+
+[ext_resource type="Shader" uid="uid://0pu4xyw0qkhk" path="res://Shaders/blur.gdshader" id="1_8rt2v"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gryw2"]
+shader = ExtResource("1_8rt2v")
+shader_parameter/blur_amount = 2.5
+
+[node name="safe_ui" type="CanvasLayer" unique_id=1927107036]
+
+[node name="background" type="ColorRect" parent="." unique_id=84916526]
+material = SubResource("ShaderMaterial_gryw2")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="safe_box" type="ColorRect" parent="." unique_id=1040633824]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -252.0
+offset_top = -100.0
+offset_right = 248.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.22831997, 0.22831997, 0.22831997, 1)
+
+[node name="safe_text2" type="RichTextLabel" parent="." unique_id=1528949846]
+offset_left = 470.0
+offset_top = 259.0
+offset_right = 684.0
+offset_bottom = 350.0
+theme_override_font_sizes/normal_font_size = 30
+text = "Safe Passcode:"
+
+[node name="safe_pass" type="LineEdit" parent="." unique_id=1926746825]
+offset_left = 426.0
+offset_top = 321.0
+offset_right = 724.0
+offset_bottom = 371.0
+theme_override_font_sizes/font_size = 30
+placeholder_text = "XXXXX"
+alignment = 1
+max_length = 5
+context_menu_enabled = false
+
+[node name="button_confirm" type="Button" parent="." unique_id=1285292269]
+offset_left = 431.0
+offset_top = 435.0
+offset_right = 573.0
+offset_bottom = 493.0
+theme_override_font_sizes/font_size = 30
+text = "Confirm"
+
+[node name="button_exit" type="Button" parent="." unique_id=186017428]
+offset_left = 581.0
+offset_top = 435.0
+offset_right = 723.00024
+offset_bottom = 493.0
+theme_override_font_sizes/font_size = 30
+text = "Exit"

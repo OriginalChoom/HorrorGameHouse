@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://rm0ul7bjxhyg"]
+
+[ext_resource type="Script" uid="uid://bjm2wg25rmuld" path="res://Scripts/Items/Brick/brick.gd" id="1_sugqf"]
+[ext_resource type="Material" uid="uid://dfjjik6h03b4q" path="res://Models/Materials/wall_plaster_damaged.tres" id="2_2je2e"]
+[ext_resource type="Material" uid="uid://ddt6vit302a4e" path="res://Models/Particle Materials/wall_dust_particles.tres" id="2_lrwgp"]
+[ext_resource type="ArrayMesh" uid="uid://clj8l1gmokwm1" path="res://Models/Meshes/Modular Wall/wall_straight_interact_brick.obj" id="3_f122m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sugqf"]
+size = Vector3(0.3963318, 0.2175293, 0.35272217)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lrwgp"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.6789437, 0.6789437, 0.6789437, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_lrwgp"]
+material = SubResource("StandardMaterial3D_lrwgp")
+size = Vector2(0.2, 0.2)
+
+[node name="brick" type="RigidBody3D" unique_id=108760963]
+script = ExtResource("1_sugqf")
+
+[node name="brick_mesh" type="MeshInstance3D" parent="." unique_id=1278923980]
+material_override = ExtResource("2_2je2e")
+mesh = ExtResource("3_f122m")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1616877957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010940552, 0.0057373047, -0.0016784668)
+shape = SubResource("BoxShape3D_sugqf")
+
+[node name="dust_particles" type="GPUParticles3D" parent="." unique_id=1994648047]
+emitting = false
+amount = 50
+lifetime = 2.0
+one_shot = true
+speed_scale = 0.5
+explosiveness = 0.5
+process_material = ExtResource("2_lrwgp")
+draw_pass_1 = SubResource("QuadMesh_lrwgp")

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b2knr7mqvdd23"]
+
+[ext_resource type="Texture2D" uid="uid://bn0xgtch4umnb" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/stump03.png" id="1_0ia32"]
+[ext_resource type="Texture2D" uid="uid://dll4jaw67tjki" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/Stump03_normal.png" id="2_ovy0g"]
+[ext_resource type="Texture2D" uid="uid://1bgbtls3nnjm" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/stump03_roughness.png" id="3_moaep"]
+
+[resource]
+albedo_texture = ExtResource("1_0ia32")
+roughness_texture = ExtResource("3_moaep")
+normal_enabled = true
+normal_texture = ExtResource("2_ovy0g")

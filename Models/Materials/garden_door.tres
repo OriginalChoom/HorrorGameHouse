@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c3ywlj6v2kdhp"]
+
+[ext_resource type="Texture2D" uid="uid://m7h15a6uvumo" path="res://Models/Textures/Door Wood/Garden Door/Wood035_2K-JPG_Color.jpg" id="1_tiqg8"]
+[ext_resource type="Texture2D" uid="uid://cre84hsqb1kq0" path="res://Models/Textures/Door Wood/Garden Door/Wood035_2K-JPG_Displacement.jpg" id="2_ffs3b"]
+[ext_resource type="Texture2D" uid="uid://duaagkdnwh18" path="res://Models/Textures/Door Wood/Garden Door/Wood035_2K-JPG_NormalGL.jpg" id="3_5coxj"]
+[ext_resource type="Texture2D" uid="uid://b02isvrgq3ti2" path="res://Models/Textures/Door Wood/Garden Door/Wood035_2K-JPG_Roughness.jpg" id="4_xmc16"]
+
+[resource]
+albedo_texture = ExtResource("1_tiqg8")
+roughness_texture = ExtResource("4_xmc16")
+normal_enabled = true
+normal_texture = ExtResource("3_5coxj")
+heightmap_texture = ExtResource("2_ffs3b")

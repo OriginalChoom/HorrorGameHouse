@@ -1,20 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://3dsqu2n0msq0"]
+[gd_scene format=3 uid="uid://3dsqu2n0msq0"]
 
-[ext_resource type="Script" uid="uid://dc3ki65454ixv" path="res://Scripts/Garden Door/garden_door_key.gd" id="1_2utrr"]
-[ext_resource type="PackedScene" uid="uid://sm2a3brk5hde" path="res://Models/Meshes/Keys/garden_door_key.glb" id="1_byjhd"]
 [ext_resource type="Script" uid="uid://dghr0ge7c744e" path="res://Scripts/Garden Door/garden_door_key_function.gd" id="1_npon8"]
+[ext_resource type="PackedScene" uid="uid://cekv1p1wpmss0" path="res://Models/Meshes/Keys/garden_door_key.blend" id="2_2utrr"]
+[ext_resource type="Material" uid="uid://1nootifq4kj8" path="res://Models/Materials/rusted_metal_garden_key.tres" id="3_npon8"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_byjhd"]
-size = Vector3(0.452026, 0.197021, 0.128723)
+size = Vector3(0.3901061, 0.1144408, 0.03193661)
 
-[node name="garden_door_key" type="Node3D"]
+[node name="garden_door_key" type="RigidBody3D" unique_id=1366417019]
 script = ExtResource("1_npon8")
 
-[node name="garden_door_key" parent="." instance=ExtResource("1_byjhd")]
+[node name="garden_door_key" parent="." unique_id=1346987780 instance=ExtResource("2_2utrr")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="garden_door_key"]
-script = ExtResource("1_2utrr")
+[node name="key" parent="garden_door_key" index="0" unique_id=696662549]
+material_override = ExtResource("3_npon8")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="garden_door_key/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0873413, -0.00842285, -0.00393677)
+[node name="key_collision" type="CollisionShape3D" parent="." unique_id=309251091]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0807342, 0.0012512896, -0.00017549656)
 shape = SubResource("BoxShape3D_byjhd")
+
+[editable path="garden_door_key"]

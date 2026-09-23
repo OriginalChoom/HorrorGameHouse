@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://dj18v6upmrpvc"]
+
+[ext_resource type="PackedScene" uid="uid://x7r7xoma63mh" path="res://Models/Meshes/Modular Wall/wall_straight_interact.blend" id="1_8flv1"]
+[ext_resource type="Material" uid="uid://bj25fmd2g7sgc" path="res://Models/Materials/stone_wall_outside.tres" id="2_ghvwt"]
+[ext_resource type="Material" uid="uid://dfjjik6h03b4q" path="res://Models/Materials/wall_plaster_damaged.tres" id="3_beoad"]
+[ext_resource type="Material" uid="uid://b7grk700g1t8l" path="res://Models/Materials/front_gate_cracked_wall.tres" id="4_uo2w8"]
+[ext_resource type="PackedScene" uid="uid://rm0ul7bjxhyg" path="res://Scenes/Assets/Items/brick.tscn" id="5_beoad"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6npri"]
+size = Vector3(0.6501465, 4.1070557, 0.64245605)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bxi2k"]
+size = Vector3(1.187439, 2.9976196, 0.40603638)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w77ew"]
+size = Vector3(1.2841167, 3.037384, 0.40603638)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_exsgf"]
+size = Vector3(1.4660487, 0.7476883, 0.40603638)
+
+[node name="wall_cracked_interact" type="Node3D" unique_id=1687299609]
+
+[node name="wall_straight_interact" parent="." unique_id=1917465718 instance=ExtResource("1_8flv1")]
+
+[node name="wall_pillar" parent="wall_straight_interact" index="0" unique_id=2084956379]
+material_override = ExtResource("2_ghvwt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="wall_straight_interact/wall_pillar" index="0" unique_id=264423415]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_straight_interact/wall_pillar/StaticBody3D" unique_id=725112626]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00061035156, 0.5100708, -0.0025024395)
+shape = SubResource("BoxShape3D_6npri")
+
+[node name="bricks" parent="wall_straight_interact/wall_pillar" index="1" unique_id=965015919]
+surface_material_override/0 = ExtResource("3_beoad")
+
+[node name="wall" parent="wall_straight_interact/wall_pillar" index="2" unique_id=1828273274]
+surface_material_override/0 = ExtResource("3_beoad")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="wall_straight_interact/wall_pillar/wall" index="0" unique_id=92876501]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_straight_interact/wall_pillar/wall/StaticBody3D" unique_id=1336320040]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2148536, 0.007171631, -0.0035858136)
+shape = SubResource("BoxShape3D_bxi2k")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="wall_straight_interact/wall_pillar/wall/StaticBody3D" unique_id=486623604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3611132, -0.012710571, -0.0035858136)
+shape = SubResource("BoxShape3D_w77ew")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="wall_straight_interact/wall_pillar/wall/StaticBody3D" unique_id=1444659904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05444157, 1.1114902, -0.0035858136)
+shape = SubResource("BoxShape3D_exsgf")
+
+[node name="wall_pillar_cube" parent="wall_straight_interact/wall_pillar" index="3" unique_id=517343690]
+material_override = ExtResource("4_uo2w8")
+
+[node name="wall_pillar_undercube" parent="wall_straight_interact/wall_pillar" index="4" unique_id=2026344132]
+material_override = ExtResource("4_uo2w8")
+
+[node name="brick" parent="." unique_id=108760963 instance=ExtResource("5_beoad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.110844, 0.58332735, -0.019279957)
+
+[node name="brick2" parent="." unique_id=817023921 instance=ExtResource("5_beoad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27503836, 0.08778849, -0.019279957)
+
+[node name="brick3" parent="." unique_id=100184798 instance=ExtResource("5_beoad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.110291, 0.093773484, -0.019279957)
+
+[node name="brick4" parent="." unique_id=1371873492 instance=ExtResource("5_beoad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.48257494, -0.15570733, -0.019279957)
+
+[node name="brick5" parent="." unique_id=1890196878 instance=ExtResource("5_beoad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27288157, -0.39927077, -0.019279957)
+
+[node name="brick6" parent="." unique_id=1290560814 instance=ExtResource("5_beoad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.065882, -0.40414348, -0.019279957)
+
+[node name="brick7" parent="." unique_id=1204523403 instance=ExtResource("5_beoad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89644927, -0.6494644, -0.019279957)
+
+[editable path="wall_straight_interact"]

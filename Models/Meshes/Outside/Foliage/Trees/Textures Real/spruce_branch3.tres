@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bi2l138abcfpr"]
+
+[ext_resource type="Texture2D" uid="uid://5apjhku7k0g0" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce branch 3.png" id="1_b7x5m"]
+[ext_resource type="Texture2D" uid="uid://b1lk0f64udj8d" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce branch 3_Normal.png" id="2_51g4x"]
+[ext_resource type="Texture2D" uid="uid://ckqhdbpr8i33x" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce branch 3_Roughness.png" id="3_fpipd"]
+
+[resource]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("1_b7x5m")
+roughness_texture = ExtResource("3_fpipd")
+normal_enabled = true
+normal_texture = ExtResource("2_51g4x")

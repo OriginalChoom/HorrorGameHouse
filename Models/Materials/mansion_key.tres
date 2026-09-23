@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://hqhqxk2ts6l"]
+
+[ext_resource type="Texture2D" uid="uid://b6qe1hjso8wv3" path="res://Models/Textures/Mansion/Mansion Key/mansion_diff.png" id="1_v110e"]
+[ext_resource type="Texture2D" uid="uid://co8r4twts76sv" path="res://Models/Textures/Mansion/Mansion Key/mansion_key_ao.png" id="2_m30yg"]
+[ext_resource type="Texture2D" uid="uid://c0606nas11nal" path="res://Models/Textures/Mansion/Mansion Key/mansion_key_normal.png" id="3_bwtqf"]
+
+[resource]
+albedo_texture = ExtResource("1_v110e")
+normal_enabled = true
+normal_scale = 0.3
+normal_texture = ExtResource("3_bwtqf")
+ao_enabled = true
+ao_texture = ExtResource("2_m30yg")

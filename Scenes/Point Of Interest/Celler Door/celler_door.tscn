@@ -1,0 +1,159 @@
+[gd_scene format=3 uid="uid://b7itx3e3aj4kc"]
+
+[ext_resource type="Script" uid="uid://ch7cf6b81px4q" path="res://Scripts/Point of Interest/Celler Door/celler_door.gd" id="1_vg13a"]
+[ext_resource type="PackedScene" uid="uid://dvsna8u4t3cmr" path="res://Models/Meshes/Outside/Point of Interest/Celler Door/celler_door.blend" id="2_br20u"]
+[ext_resource type="Script" uid="uid://bm308vu6icxy7" path="res://Scripts/Point of Interest/Celler Door/celler_door_trigger.gd" id="3_k0xsq"]
+[ext_resource type="PackedScene" uid="uid://bhp4l0k5smit8" path="res://Scenes/Point Of Interest/Celler Door/celler_door_chain.tscn" id="4_br20u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bojtp"]
+size = Vector3(0.063964844, 0.049453735, 2.59523)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbis5"]
+size = Vector3(0.063964844, 0.052978516, 2.59523)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5g36d"]
+size = Vector3(0.087768555, 0.043701172, 2.088688)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nlnjy"]
+size = Vector3(0.10545349, 0.02142334, 2.574356)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_66kyd"]
+size = Vector3(0.1064415, 0.7832489, 0.44789124)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d22er"]
+size = Vector3(0.10614014, 0.3926506, 0.9633255)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ye4cc"]
+size = Vector3(0.10687256, 0.08255577, 0.76498795)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2altl"]
+size = Vector3(0.105529785, 0.099871635, 0.76498795)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oonfg"]
+size = Vector3(0.105895996, 0.099871635, 1.344408)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vg13a"]
+size = Vector3(2.0722961, 1.0338745, 0.026275635)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s4j0l"]
+size = Vector3(0.029785156, 0.034484863, 0.29040527)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d5lsr"]
+size = Vector3(0.9259033, 0.023895264, 2.546997)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wwpos"]
+size = Vector3(0.029785156, 0.034484863, 0.29040527)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_50d3c"]
+size = Vector3(0.9259033, 0.023895264, 2.546997)
+
+[node name="celler_door" type="Node3D" unique_id=2124066634]
+script = ExtResource("1_vg13a")
+
+[node name="celler_door" parent="." unique_id=1746240314 instance=ExtResource("2_br20u")]
+
+[node name="right_side" type="StaticBody3D" parent="celler_door/celler_door_base" parent_id_path=PackedInt32Array(1746240314, 706348043) index="0" unique_id=889563716]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="celler_door/celler_door_base/right_side" unique_id=453161733]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0657511, -0.025474548, -0.110054016)
+shape = SubResource("BoxShape3D_bojtp")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="celler_door/celler_door_base/right_side" unique_id=2089320915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0697274, -0.026733398, -0.110054016)
+shape = SubResource("BoxShape3D_pbis5")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="celler_door/celler_door_base/right_side" unique_id=37014768]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.0049140453, -0.023071289, 1.1431736)
+shape = SubResource("BoxShape3D_5g36d")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="celler_door/celler_door_base/right_side" unique_id=1439942899]
+transform = Transform3D(1, 0, 0, 0, 0.9271838, -0.37460655, 0, 0.37460655, 0.9271838, 0.9825675, 0.49119896, -0.099117994)
+shape = SubResource("BoxShape3D_nlnjy")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="celler_door/celler_door_base/right_side" unique_id=93569326]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.9836979, 0.39320293, -1.0813568)
+shape = SubResource("BoxShape3D_66kyd")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="celler_door/celler_door_base/right_side" unique_id=77797292]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.98349, 0.1979038, -0.37886432)
+shape = SubResource("BoxShape3D_d22er")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="celler_door/celler_door_base/right_side" unique_id=1200065998]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.9839783, 0.042856395, 0.49559116)
+shape = SubResource("BoxShape3D_ye4cc")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="celler_door/celler_door_base/right_side" unique_id=1383694927]
+transform = Transform3D(1, 0, 0, 0, 0.92718375, -0.37460655, 0, 0.37460655, 0.92718375, 0.9833069, 0.20028058, 0.43653274)
+shape = SubResource("BoxShape3D_2altl")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="celler_door/celler_door_base/right_side" unique_id=994575651]
+transform = Transform3D(1, 0, 0, 0, 0.92718375, -0.37460655, 0, 0.37460655, 0.92718375, 0.98349, 0.65366495, -0.66332686)
+shape = SubResource("BoxShape3D_oonfg")
+
+[node name="left_side" type="StaticBody3D" parent="celler_door/celler_door_base" parent_id_path=PackedInt32Array(1746240314, 706348043) index="1" unique_id=1113090598]
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="celler_door/celler_door_base/left_side" unique_id=149246097]
+transform = Transform3D(1, 0, 0, 0, 0.9271838, -0.37460655, 0, 0.37460655, 0.9271838, -0.9835661, 0.49232215, -0.11547178)
+shape = SubResource("BoxShape3D_nlnjy")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="celler_door/celler_door_base/left_side" unique_id=1405283784]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -0.9842642, 0.39320293, -1.0813568)
+shape = SubResource("BoxShape3D_66kyd")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="celler_door/celler_door_base/left_side" unique_id=1344617259]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -0.98443586, 0.1979038, -0.37886432)
+shape = SubResource("BoxShape3D_d22er")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="celler_door/celler_door_base/left_side" unique_id=1678813719]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -0.9830931, 0.042856395, 0.49559116)
+shape = SubResource("BoxShape3D_ye4cc")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="celler_door/celler_door_base/left_side" unique_id=1963947994]
+transform = Transform3D(1, 0, 0, 0, 0.92718375, -0.37460655, 0, 0.37460655, 0.92718375, -0.9830931, 0.20028058, 0.43653274)
+shape = SubResource("BoxShape3D_2altl")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="celler_door/celler_door_base/left_side" unique_id=1168501093]
+transform = Transform3D(1, 0, 0, 0, 0.92718375, -0.37460655, 0, 0.37460655, 0.92718375, -0.9830931, 0.65366495, -0.66332686)
+shape = SubResource("BoxShape3D_oonfg")
+
+[node name="back_side" type="StaticBody3D" parent="celler_door/celler_door_base" parent_id_path=PackedInt32Array(1746240314, 706348043) index="2" unique_id=1698240012]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="celler_door/celler_door_base/back_side" unique_id=2106694576]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5776367e-05, 0.47055054, -1.2959785)
+shape = SubResource("BoxShape3D_vg13a")
+
+[node name="hindge_for_anim_left" parent="celler_door" index="3" unique_id=1596946464]
+transform = Transform3D(1, -7.786262e-17, -5.2255775e-17, 7.78626e-17, 0.3789176, 0.9254304, -5.2255792e-17, -0.9254304, 0.3789176, -0.93502206, 0.52447367, -0.18017818)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="celler_door/hindge_for_anim_left/celler_door_left_door/celler_door_handle_left" parent_id_path=PackedInt32Array(1746240314, 1611804592) index="0" unique_id=263601517]
+script = ExtResource("3_k0xsq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="celler_door/hindge_for_anim_left/celler_door_left_door/celler_door_handle_left/StaticBody3D" unique_id=388631587]
+transform = Transform3D(1, -2.5135339e-17, -2.5288311e-17, 1.3878357e-17, 0.9277125, -0.37329543, 3.2843193e-17, 0.37329543, 0.9277125, 0.00024414063, 0.015425473, -0.0042439103)
+shape = SubResource("BoxShape3D_s4j0l")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="celler_door/hindge_for_anim_left/celler_door_left_door" parent_id_path=PackedInt32Array(1746240314, 1341925155) index="1" unique_id=1391926745]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="celler_door/hindge_for_anim_left/celler_door_left_door/StaticBody3D" unique_id=2002730937]
+transform = Transform3D(1, -1.6543612e-24, 3.3087225e-24, -1.557344e-24, 0.9252097, -0.37945616, 0, 0.37945616, 0.9252097, 0.005432129, 0.0033826232, -0.00036239624)
+shape = SubResource("BoxShape3D_d5lsr")
+
+[node name="hindge_for_anim_right" parent="celler_door" index="4" unique_id=952761237]
+transform = Transform3D(1, -7.786262e-17, -5.2255775e-17, 7.78626e-17, 0.3789176, 0.9254304, -5.2255792e-17, -0.9254304, 0.3789176, 0.9286908, 0.52447367, -0.18017818)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="celler_door/hindge_for_anim_right/celler_door_right_door/celler_door_handle_right" parent_id_path=PackedInt32Array(1746240314, 962877781) index="0" unique_id=562885099]
+script = ExtResource("3_k0xsq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="celler_door/hindge_for_anim_right/celler_door_right_door/celler_door_handle_right/StaticBody3D" unique_id=864178749]
+transform = Transform3D(1, -2.5135339e-17, -2.5288311e-17, 1.3878357e-17, 0.9277125, -0.37329543, 3.2843193e-17, 0.37329543, 0.9277125, 0.00024414063, 0.015425473, -0.0042439103)
+shape = SubResource("BoxShape3D_wwpos")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="celler_door/hindge_for_anim_right/celler_door_right_door" parent_id_path=PackedInt32Array(1746240314, 1059260267) index="1" unique_id=1743502186]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="celler_door/hindge_for_anim_right/celler_door_right_door/StaticBody3D" unique_id=1380710039]
+transform = Transform3D(1, -1.6543612e-24, 3.3087225e-24, -1.557344e-24, 0.9252097, -0.37945616, 0, 0.37945616, 0.9252097, 0.005432129, 0.0033826232, -0.00036239624)
+shape = SubResource("BoxShape3D_50d3c")
+
+[node name="celler_door_chain" parent="." unique_id=1245230486 instance=ExtResource("4_br20u")]
+
+[editable path="celler_door"]

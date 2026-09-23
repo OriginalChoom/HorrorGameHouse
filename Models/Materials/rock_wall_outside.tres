@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://og82lp6emp1u"]
+
+[ext_resource type="Texture2D" uid="uid://mwba1rs5u85e" path="res://Models/Textures/Outside Walls/Rock Wall/rock_08_diff_2k.jpg" id="1_mn4o8"]
+[ext_resource type="Texture2D" uid="uid://csvr1mx8joeav" path="res://Models/Textures/Outside Walls/Rock Wall/rock_08_arm_2k.jpg" id="2_63lrh"]
+[ext_resource type="Texture2D" uid="uid://076jmy6anvqf" path="res://Models/Textures/Outside Walls/Rock Wall/rock_08_nor_gl_2k.jpg" id="3_t7x0f"]
+
+[resource]
+albedo_texture = ExtResource("1_mn4o8")
+metallic = 1.0
+metallic_texture = ExtResource("2_63lrh")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_63lrh")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_t7x0f")
+ao_enabled = true
+ao_texture = ExtResource("2_63lrh")

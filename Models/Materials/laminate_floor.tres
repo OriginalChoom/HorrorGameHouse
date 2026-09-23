@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b6e8dxt1k4vwf"]
+
+[ext_resource type="Texture2D" uid="uid://bffc8gtqnt8u7" path="res://Models/Textures/Mansion/Laminate Floor/laminate_floor_03_diff_2k.jpg" id="1_ex1bj"]
+[ext_resource type="Texture2D" uid="uid://bub1bupffmmg6" path="res://Models/Textures/Mansion/Laminate Floor/laminate_floor_03_arm_2k.jpg" id="2_ptp7o"]
+[ext_resource type="Texture2D" uid="uid://bif3ve812brgd" path="res://Models/Textures/Mansion/Laminate Floor/laminate_floor_03_nor_gl_2k.jpg" id="3_7bywy"]
+
+[resource]
+albedo_texture = ExtResource("1_ex1bj")
+metallic = 1.0
+metallic_texture = ExtResource("2_ptp7o")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_ptp7o")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_7bywy")
+ao_enabled = true
+ao_texture = ExtResource("2_ptp7o")
+uv1_scale = Vector3(5, 5, 5)

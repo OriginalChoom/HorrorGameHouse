@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b53c07am1osqr"]
+
+[ext_resource type="Texture2D" uid="uid://b5xg3wkbfg7yj" path="res://Models/Textures/Safe/Metal/Metal046B_2K-JPG_Color.jpg" id="1_pflg0"]
+[ext_resource type="Texture2D" uid="uid://cayrsxx07pme4" path="res://Models/Textures/Safe/Metal/Metal046B_2K-JPG_Metalness.jpg" id="2_vkjms"]
+[ext_resource type="Texture2D" uid="uid://dvg2rh6p1r7yd" path="res://Models/Textures/Safe/Metal/Metal046B_2K-JPG_NormalGL.jpg" id="3_1pn5q"]
+[ext_resource type="Texture2D" uid="uid://bqw6jepdh5chk" path="res://Models/Textures/Safe/Metal/Metal046B_2K-JPG_Roughness.jpg" id="4_8i7rg"]
+
+[resource]
+albedo_texture = ExtResource("1_pflg0")
+metallic = 1.0
+metallic_texture = ExtResource("2_vkjms")
+roughness_texture = ExtResource("4_8i7rg")
+normal_enabled = true
+normal_texture = ExtResource("3_1pn5q")

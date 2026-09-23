@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dncp2aqd5ouwk"]
+
+[ext_resource type="Texture2D" uid="uid://ventei7frubu" path="res://Models/Textures/Safe/Rubber/Rubber004_2K-JPG_Color.jpg" id="1_4n55w"]
+[ext_resource type="Texture2D" uid="uid://c8jbw1lefv0kb" path="res://Models/Textures/Safe/Rubber/Rubber004_2K-JPG_NormalGL.jpg" id="2_ruaj6"]
+[ext_resource type="Texture2D" uid="uid://d4hgsmn1v047v" path="res://Models/Textures/Safe/Rubber/Rubber004_2K-JPG_Roughness.jpg" id="3_b1to1"]
+
+[resource]
+albedo_texture = ExtResource("1_4n55w")
+roughness_texture = ExtResource("3_b1to1")
+normal_enabled = true
+normal_texture = ExtResource("2_ruaj6")

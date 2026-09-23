@@ -1,0 +1,31 @@
+// Created by Tree IT
+newmtl bark06
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+map_Kd bark06.png
+
+newmtl stump03
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+map_Kd stump03.png
+
+newmtl spruce branch 1
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+map_Kd spruce branch 1.png
+
+newmtl spruce branch 2
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+map_Kd spruce branch 2.png
+
+newmtl spruce branch 3
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+map_Kd spruce branch 3.png
+

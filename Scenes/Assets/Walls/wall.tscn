@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://5drkl5eo7ldb"]
+
+[ext_resource type="PackedScene" uid="uid://c2xaokxq67qyk" path="res://Models/Meshes/Modular Wall/wall_straight.blend" id="1_6j7hl"]
+[ext_resource type="Material" uid="uid://bj25fmd2g7sgc" path="res://Models/Materials/stone_wall_outside.tres" id="2_52w7a"]
+[ext_resource type="Material" uid="uid://b7grk700g1t8l" path="res://Models/Materials/front_gate_cracked_wall.tres" id="4_c4kyy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k71g7"]
+size = Vector3(3.8368835, 3.2814941, 0.29858398)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_egpxc"]
+size = Vector3(0.616333, 3.7344055, 0.57232666)
+
+[node name="wall" type="Node3D" unique_id=163494492]
+
+[node name="wall_straight" parent="." unique_id=1196943616 instance=ExtResource("1_6j7hl")]
+
+[node name="wall" parent="wall_straight" index="0" unique_id=366594404]
+material_override = ExtResource("4_c4kyy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="wall_straight/wall" index="0" unique_id=879949958]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_straight/wall/StaticBody3D" unique_id=1676314157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58143616, 0.5494385, -0.0035400372)
+shape = SubResource("BoxShape3D_k71g7")
+
+[node name="wall_pillar_001" parent="wall_straight" index="1" unique_id=1996741188]
+material_override = ExtResource("2_52w7a")
+
+[node name="wall_pillar_cube_001" parent="wall_straight/wall_pillar_001" index="0" unique_id=1592717419]
+material_override = ExtResource("4_c4kyy")
+
+[node name="wall_pillar_undercube_001" parent="wall_straight/wall_pillar_001" index="1" unique_id=1897238940]
+material_override = ExtResource("4_c4kyy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="wall_straight/wall_pillar_001" index="2" unique_id=1477961911]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_straight/wall_pillar_001/StaticBody3D" unique_id=145535707]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0067749023, 0.3799286, 0.003021242)
+shape = SubResource("BoxShape3D_egpxc")
+
+[editable path="wall_straight"]

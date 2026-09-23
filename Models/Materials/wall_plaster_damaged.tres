@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dfjjik6h03b4q"]
+
+[ext_resource type="Texture2D" uid="uid://cy80v02ypjq7g" path="res://Models/Textures/Outside Walls/Damaged Plaster Wall/damaged_plaster_diff_2k.jpg" id="1_gb35h"]
+[ext_resource type="Texture2D" uid="uid://bmaywpm3wgny5" path="res://Models/Textures/Outside Walls/Damaged Plaster Wall/damaged_plaster_arm_2k.jpg" id="2_t6h2m"]
+[ext_resource type="Texture2D" uid="uid://b2xe1ju4fvnqc" path="res://Models/Textures/Outside Walls/Damaged Plaster Wall/damaged_plaster_nor_gl_2k.jpg" id="3_bko3y"]
+
+[resource]
+albedo_texture = ExtResource("1_gb35h")
+metallic = 1.0
+metallic_texture = ExtResource("2_t6h2m")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_t6h2m")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_bko3y")
+ao_enabled = true
+ao_texture = ExtResource("2_t6h2m")

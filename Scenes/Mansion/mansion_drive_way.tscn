@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ca4hoc34s3txl"]
+
+[ext_resource type="PackedScene" uid="uid://cvp8jtqeeqovx" path="res://Models/Meshes/Mansion/mansion_driveway.blend" id="1_lam8a"]
+
+[node name="mansion_drive_way" type="Node3D" unique_id=959472780]
+
+[node name="mansion_driveway" parent="." unique_id=347058639 instance=ExtResource("1_lam8a")]

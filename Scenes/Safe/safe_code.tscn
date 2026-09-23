@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bmqc4xft07hdu"]
+
+[ext_resource type="Script" uid="uid://dqi63c3u71vg2" path="res://Scripts/Safe/safe_code.gd" id="1_xyd0p"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gopyc"]
+size = Vector2(0.35, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gopyc"]
+albedo_color = Color(0.021434637, 0.021434635, 0.021434633, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_xyd0p"]
+material = SubResource("StandardMaterial3D_gopyc")
+text = "00000"
+font_size = 7
+depth = 0.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gopyc"]
+size = Vector3(0.21154785, 0.009178162, 0.10015869)
+
+[node name="safe_code" type="RigidBody3D" unique_id=984218411]
+script = ExtResource("1_xyd0p")
+
+[node name="paper" type="MeshInstance3D" parent="." unique_id=1432376765]
+transform = Transform3D(0.5879507, 0, 0, 0, 1, 0, 0, 0, 0.4761659, 0, 0, 0)
+mesh = SubResource("PlaneMesh_gopyc")
+
+[node name="paper_text" type="MeshInstance3D" parent="." unique_id=925401442]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.001188241, 0)
+mesh = SubResource("TextMesh_xyd0p")
+
+[node name="paper_collision" type="CollisionShape3D" parent="." unique_id=645653804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1035156e-05, 0.00091171265, 0.00064086914)
+shape = SubResource("BoxShape3D_gopyc")

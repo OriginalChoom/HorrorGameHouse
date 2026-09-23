@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://n0c81isg5cc6"]
+
+[ext_resource type="Texture2D" uid="uid://naft4p2of5ae" path="res://Models/Textures/Outside Walls/Rock Wall Mossy/rock_pitted_mossy_diff_2k.jpg" id="1_68d41"]
+[ext_resource type="Texture2D" uid="uid://bh7gtmo2tw4f4" path="res://Models/Textures/Outside Walls/Rock Wall Mossy/rock_pitted_mossy_arm_2k.jpg" id="2_lygu1"]
+[ext_resource type="Texture2D" uid="uid://6tathw2lf8yj" path="res://Models/Textures/Outside Walls/Rock Wall Mossy/rock_pitted_mossy_nor_gl_2k.jpg" id="3_nxuo2"]
+
+[resource]
+albedo_texture = ExtResource("1_68d41")
+metallic = 1.0
+metallic_texture = ExtResource("2_lygu1")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_lygu1")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_nxuo2")
+ao_enabled = true
+ao_texture = ExtResource("2_lygu1")
+uv1_scale = Vector3(1.975, 1.975, 1.975)
+uv1_offset = Vector3(0.76, 0.615, 0)

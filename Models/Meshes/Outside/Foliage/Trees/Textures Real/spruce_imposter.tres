@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cgteofdufpfjg"]
+
+[ext_resource type="Texture2D" uid="uid://8wumxu6kejj0" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce Imposter.png" id="1_7xrj6"]
+[ext_resource type="Texture2D" uid="uid://clbr4aixw80vv" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce Imposter_Normal.png" id="2_5krmb"]
+[ext_resource type="Texture2D" uid="uid://c72ga6aho4eft" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce Imposter_Roughness.png" id="3_j1821"]
+[ext_resource type="Texture2D" uid="uid://fuax7a6sbjq7" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/spruce Imposter_Translucency.png" id="4_fljjr"]
+
+[resource]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("1_7xrj6")
+roughness_texture = ExtResource("3_j1821")
+normal_enabled = true
+normal_texture = ExtResource("2_5krmb")
+subsurf_scatter_enabled = true
+subsurf_scatter_texture = ExtResource("4_fljjr")

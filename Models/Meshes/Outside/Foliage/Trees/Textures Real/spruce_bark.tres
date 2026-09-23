@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://2ie351p8ck08"]
+
+[ext_resource type="Texture2D" uid="uid://dwaxvoi4hmicm" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/bark06.png" id="1_65gw6"]
+[ext_resource type="Texture2D" uid="uid://cm7r0qhnhe1nl" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/bark06_normal.png" id="2_rsrjd"]
+[ext_resource type="Texture2D" uid="uid://b6h3vl2xliyup" path="res://Models/Meshes/Outside/Foliage/Trees/Textures Real/bark06_roughness.png" id="3_80clp"]
+
+[resource]
+albedo_texture = ExtResource("1_65gw6")
+roughness_texture = ExtResource("3_80clp")
+normal_enabled = true
+normal_texture = ExtResource("2_rsrjd")

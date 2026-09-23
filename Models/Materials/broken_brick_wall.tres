@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://fvkoies6y5jt"]
+
+[ext_resource type="Texture2D" uid="uid://glb31vbft5l1" path="res://Models/Textures/Outside Walls/Broken Brick Wall/broken_brick_wall_diff_2k.jpg" id="1_x754v"]
+[ext_resource type="Texture2D" uid="uid://c7mnyo86k4k7m" path="res://Models/Textures/Outside Walls/Broken Brick Wall/broken_brick_wall_arm_2k.jpg" id="2_081h1"]
+[ext_resource type="Texture2D" uid="uid://dspvfe5n036je" path="res://Models/Textures/Outside Walls/Broken Brick Wall/broken_brick_wall_nor_gl_2k.jpg" id="3_xsavv"]
+
+[resource]
+albedo_texture = ExtResource("1_x754v")
+metallic = 1.0
+metallic_texture = ExtResource("2_081h1")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_081h1")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_xsavv")
+ao_enabled = true
