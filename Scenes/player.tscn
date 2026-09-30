@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://dfrjhmuqw8ls8" path="res://Scripts/Player/player.gd" id="1_diri3"]
 [ext_resource type="Script" uid="uid://d4fm7b4huayij" path="res://Scripts/Flashlight/flashlight.gd" id="3_22mvr"]
-[ext_resource type="Texture2D" uid="uid://1ovegk1o03x4" path="res://Models/Textures/Flashlight/flashlight_texture.png" id="3_qeham"]
 [ext_resource type="Script" uid="uid://dvh2jrnik7b78" path="res://Scripts/Player/ray_cast_player.gd" id="3_x3wgy"]
 [ext_resource type="Shader" uid="uid://cox8uj3xp8n6g" path="res://Shaders/fisheye.gdshader" id="4_dj7bn"]
 [ext_resource type="Material" uid="uid://brlbj36fkyt5n" path="res://Models/Materials/battery_plastic.tres" id="5_3smsa"]
@@ -234,10 +233,10 @@ skeleton = NodePath("")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.3019984, 0, 0)
 visible = false
 light_color = Color(0.913725, 0.913725, 0.792157, 1)
-light_energy = 50.0
-light_projector = ExtResource("3_qeham")
+light_energy = 70.0
+light_volumetric_fog_energy = 0.2
 shadow_enabled = true
-spot_range = 15.0
+spot_range = 20.0
 spot_attenuation = 2.37
 
 [node name="player_ui" parent="." unique_id=955576963 instance=ExtResource("7_3smsa")]

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dgrmcqwpcldsr"]
+
+[ext_resource type="PackedScene" uid="uid://db4tldsdcq06x" path="res://Models/Meshes/Outside/Outside_playable_area/road.blend" id="1_7pwit"]
+[ext_resource type="Material" uid="uid://x5g3fh5me0g3" path="res://Models/Materials/road.tres" id="2_eebsq"]
+
+[node name="road" type="Node3D" unique_id=53173670]
+
+[node name="road2" parent="." unique_id=250390103 instance=ExtResource("1_7pwit")]
+
+[node name="road" parent="road2" index="0" unique_id=693892314]
+surface_material_override/0 = ExtResource("2_eebsq")
+
+[editable path="road2"]

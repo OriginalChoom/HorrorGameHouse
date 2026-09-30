@@ -1,10 +1,13 @@
-[gd_resource type="ArrayMesh" format=4 uid="uid://b7wm31ja4bq1g"]
+[gd_resource type="ArrayMesh" format=4 uid="uid://cli4wka7fn0s7"]
 
 [ext_resource type="Texture2D" uid="uid://dpu6uvnahavt7" path="res://Models/Meshes/Outside/Foliage/Trees/textures/spruce Imposter.png" id="1_4usgd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oieku"]
 resource_name = "spruce Imposter"
-transparency = 4
+transparency = 2
+alpha_scissor_threshold = 0.25
+alpha_antialiasing_mode = 1
+alpha_antialiasing_edge = 0.2
 cull_mode = 2
 albedo_texture = ExtResource("1_4usgd")
 

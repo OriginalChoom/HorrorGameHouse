@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ccx4w0dn6ymer"]
+
+[ext_resource type="Texture2D" uid="uid://c7tu6dm0odf66" path="res://Models/Textures/Mansion/Mansion Walls/Sandstone Bricks 02/seaworn_sandstone_brick_diff_2k.jpg" id="1_q56qm"]
+[ext_resource type="Texture2D" uid="uid://7patpb661erh" path="res://Models/Textures/Mansion/Mansion Walls/Sandstone Bricks 02/seaworn_sandstone_brick_arm_2k.jpg" id="2_k3m13"]
+[ext_resource type="Texture2D" uid="uid://84kv6d1jcqa5" path="res://Models/Textures/Mansion/Mansion Walls/Sandstone Bricks 02/seaworn_sandstone_brick_nor_gl_2k.jpg" id="3_gds5d"]
+
+[resource]
+albedo_texture = ExtResource("1_q56qm")
+metallic = 1.0
+metallic_texture = ExtResource("2_k3m13")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_k3m13")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_gds5d")
+ao_enabled = true
+ao_light_affect = 0.5
+ao_texture = ExtResource("2_k3m13")

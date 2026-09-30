@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://k0igrtkpetwk"
+uid="uid://bfxbii8tskorn"
 path="res://.godot/imported/spruceLOD0.blend-847fec26a3bcb6506e381f85c44f4e55.scn"
 
 [deps]
@@ -44,7 +44,7 @@ blender/nodes/punctual_lights=true
 blender/nodes/cameras=true
 blender/nodes/custom_properties=true
 blender/nodes/modifiers=1
-blender/meshes/colors=false
+blender/meshes/colors=true
 blender/meshes/uvs=true
 blender/meshes/normals=true
 blender/meshes/export_geometry_nodes_instances=false

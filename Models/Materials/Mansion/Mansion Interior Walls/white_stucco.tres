@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://branxegsevnxw"]
+
+[ext_resource type="Texture2D" uid="uid://dtsre6ab2440v" path="res://Models/Textures/Mansion/Mansion Walls/Inside Walls/White Stucco/white_stucco_diff_2k.jpg" id="1_gx6cb"]
+[ext_resource type="Texture2D" uid="uid://uuabysswmn8h" path="res://Models/Textures/Mansion/Mansion Walls/Inside Walls/White Stucco/white_stucco_arm_2k.jpg" id="2_ubscl"]
+[ext_resource type="Texture2D" uid="uid://g2d6rh8x3g7f" path="res://Models/Textures/Mansion/Mansion Walls/Inside Walls/White Stucco/white_stucco_nor_gl_2k.jpg" id="3_0ku4y"]
+
+[resource]
+albedo_texture = ExtResource("1_gx6cb")
+metallic = 1.0
+metallic_texture = ExtResource("2_ubscl")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_ubscl")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_0ku4y")
+ao_enabled = true
+ao_texture = ExtResource("2_ubscl")

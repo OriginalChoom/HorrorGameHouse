@@ -1,7 +1,13 @@
 [gd_scene format=3 uid="uid://bnul1ypsj5iil"]
 
 [ext_resource type="PackedScene" uid="uid://dejx1kwbn4osx" path="res://Models/Meshes/Mansion/mansion_walkway_slab.blend" id="1_ul5yy"]
+[ext_resource type="Material" uid="uid://og82lp6emp1u" path="res://Models/Materials/rock_wall_outside.tres" id="2_qib1e"]
 
 [node name="mansion_walkway_slab" type="Node3D" unique_id=486914565]
 
-[node name="mansion_walkway_slab" parent="." unique_id=773568528 instance=ExtResource("1_ul5yy")]
+[node name="mansion_walkway_slab" parent="." unique_id=1116343619 instance=ExtResource("1_ul5yy")]
+
+[node name="Cube" parent="mansion_walkway_slab" index="0" unique_id=515947753]
+material_override = ExtResource("2_qib1e")
+
+[editable path="mansion_walkway_slab"]

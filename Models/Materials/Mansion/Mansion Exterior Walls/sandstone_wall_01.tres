@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://chp5sg2q7o3pl"]
+
+[ext_resource type="Texture2D" uid="uid://d2fi3nkdbr1fq" path="res://Models/Textures/Mansion/Mansion Walls/Sandstone Bricks 01/Bricks084_2K-JPG_Color.jpg" id="1_vcare"]
+[ext_resource type="Texture2D" uid="uid://bxhyywjpoocy5" path="res://Models/Textures/Mansion/Mansion Walls/Sandstone Bricks 01/Bricks084_2K-JPG_AmbientOcclusion.jpg" id="2_vrwsn"]
+[ext_resource type="Texture2D" uid="uid://kjtyowkp427m" path="res://Models/Textures/Mansion/Mansion Walls/Sandstone Bricks 01/Bricks084_2K-JPG_NormalGL.jpg" id="3_q0nya"]
+[ext_resource type="Texture2D" uid="uid://ik7ylccjl606" path="res://Models/Textures/Mansion/Mansion Walls/Sandstone Bricks 01/Bricks084_2K-JPG_Roughness.jpg" id="4_pl23u"]
+
+[resource]
+albedo_color = Color(0.72407025, 0.6630332, 0.6599705, 1)
+albedo_texture = ExtResource("1_vcare")
+roughness_texture = ExtResource("4_pl23u")
+normal_enabled = true
+normal_texture = ExtResource("3_q0nya")
+ao_enabled = true
+ao_texture = ExtResource("2_vrwsn")
+ao_texture_channel = 4

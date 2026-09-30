@@ -1,7 +1,16 @@
 [gd_scene format=3 uid="uid://ca4hoc34s3txl"]
 
 [ext_resource type="PackedScene" uid="uid://cvp8jtqeeqovx" path="res://Models/Meshes/Mansion/mansion_driveway.blend" id="1_lam8a"]
+[ext_resource type="Material" uid="uid://t6jv4mwkyvsa" path="res://Models/Materials/solo_road.tres" id="2_d63od"]
 
 [node name="mansion_drive_way" type="Node3D" unique_id=959472780]
 
-[node name="mansion_driveway" parent="." unique_id=347058639 instance=ExtResource("1_lam8a")]
+[node name="mansion_driveway" parent="." unique_id=1302145712 instance=ExtResource("1_lam8a")]
+
+[node name="curve_on_road" parent="mansion_driveway" index="0" unique_id=118247070]
+surface_material_override/0 = ExtResource("2_d63od")
+
+[node name="road" parent="mansion_driveway" index="1" unique_id=497484448]
+surface_material_override/0 = ExtResource("2_d63od")
+
+[editable path="mansion_driveway"]

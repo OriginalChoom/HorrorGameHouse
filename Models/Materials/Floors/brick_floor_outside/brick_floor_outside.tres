@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c3dd8ckn4dnyw"]
+
+[ext_resource type="Texture2D" uid="uid://bthosnkeol5rl" path="res://Models/Textures/Floors/Brick Floor - Outside/brick_floor_003_diffuse_2k.jpg" id="1_ixwks"]
+[ext_resource type="Texture2D" uid="uid://bauqj5bvttl3g" path="res://Models/Textures/Floors/Brick Floor - Outside/brick_floor_003_arm_2k.jpg" id="2_j830b"]
+[ext_resource type="Texture2D" uid="uid://knjlm5tvma5n" path="res://Models/Textures/Floors/Brick Floor - Outside/brick_floor_003_nor_gl_2k.jpg" id="3_wgtf5"]
+
+[resource]
+albedo_texture = ExtResource("1_ixwks")
+metallic = 1.0
+metallic_texture = ExtResource("2_j830b")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_j830b")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_scale = 1.3
+normal_texture = ExtResource("3_wgtf5")
+ao_enabled = true
+ao_texture = ExtResource("2_j830b")

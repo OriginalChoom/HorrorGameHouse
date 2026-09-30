@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://x5g3fh5me0g3"]
+
+[ext_resource type="Texture2D" uid="uid://eml41752xuy5" path="res://Models/Meshes/Outside/Outside_playable_area/textures/Road/Road for Car/Road008A_2K-JPG_Color.jpg" id="1_n2fch"]
+[ext_resource type="Texture2D" uid="uid://c35bh2k2sy5by" path="res://Models/Meshes/Outside/Outside_playable_area/textures/Road/Road for Car/Road008A_2K-JPG_AmbientOcclusion.jpg" id="2_pvt2e"]
+[ext_resource type="Texture2D" uid="uid://bj3sfkpdjv0oc" path="res://Models/Meshes/Outside/Outside_playable_area/textures/Road/Road for Car/Road008A_2K-JPG_NormalGL.jpg" id="3_f2fd4"]
+[ext_resource type="Texture2D" uid="uid://civ0d6wfwvcjv" path="res://Models/Meshes/Outside/Outside_playable_area/textures/Road/Road for Car/Road008A_2K-JPG_Roughness.jpg" id="4_bvuuq"]
+
+[resource]
+albedo_texture = ExtResource("1_n2fch")
+roughness_texture = ExtResource("4_bvuuq")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_f2fd4")
+ao_enabled = true
+ao_texture = ExtResource("2_pvt2e")

@@ -1,4 +1,4 @@
-[gd_resource type="ArrayMesh" format=4 uid="uid://dy3b17qp6s2v4"]
+[gd_resource type="ArrayMesh" format=4 uid="uid://bviu06t38bci8"]
 
 [ext_resource type="Texture2D" uid="uid://bygetmuygrlt7" path="res://Models/Meshes/Outside/Foliage/Trees/textures/bark06.png" id="1_tp2da"]
 [ext_resource type="Texture2D" uid="uid://b7ma3ub5u557v" path="res://Models/Meshes/Outside/Foliage/Trees/textures/spruce branch 1.png" id="2_pvxf7"]
@@ -11,13 +11,19 @@ albedo_texture = ExtResource("1_tp2da")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v72jt"]
 resource_name = "spruce branch 1"
-transparency = 4
+transparency = 2
+alpha_scissor_threshold = 0.25
+alpha_antialiasing_mode = 1
+alpha_antialiasing_edge = 0.2
 cull_mode = 2
 albedo_texture = ExtResource("2_pvxf7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kdogt"]
 resource_name = "spruce branch 2"
-transparency = 4
+transparency = 2
+alpha_scissor_threshold = 0.25
+alpha_antialiasing_mode = 1
+alpha_antialiasing_edge = 0.2
 cull_mode = 2
 albedo_texture = ExtResource("3_v4628")
 
