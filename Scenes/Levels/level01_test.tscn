@@ -25,19 +25,50 @@
 [ext_resource type="PackedScene" uid="uid://c2v60n62al8wl" path="res://Scenes/Mansion/mansion_water_fountain.tscn" id="21_caiox"]
 [ext_resource type="Image" uid="uid://clpj7a2g6yqj3" path="res://Scenes/Levels/Root/Heightmap_0_0.res" id="21_drpmx"]
 [ext_resource type="Image" uid="uid://b2octogwgr34q" path="res://Scenes/Levels/Root/Splatmap_0_0_0.res" id="25_1hov7"]
+[ext_resource type="Texture2D" uid="uid://djjmqamee11qy" path="res://Models/Textures/Terrain/Grass 2/Grass006_2K-JPG_Color.jpg" id="25_eanpk"]
+[ext_resource type="ArrayMesh" uid="uid://dihegmrd216ox" path="res://Models/Meshes/Outside/Foliage/Trees/Trees .tres/spruceLOD0.tres" id="25_ghan2"]
+[ext_resource type="ArrayMesh" uid="uid://cjyebfm6keoxw" path="res://Models/Meshes/Outside/Foliage/Trees/Trees .tres/spruceLOD2.tres" id="26_qdfav"]
+[ext_resource type="Texture2D" uid="uid://qp05h8ur6c2u" path="res://Models/Textures/Terrain/Grass 2/Grass006_2K-JPG_NormalGL.jpg" id="26_ssl2o"]
+[ext_resource type="ArrayMesh" uid="uid://bviu06t38bci8" path="res://Models/Meshes/Outside/Foliage/Trees/Trees .tres/spruceLOD3.tres" id="27_ny580"]
 [ext_resource type="Image" uid="uid://b6nutqeecpilh" path="res://Scenes/Levels/Root/Heightmap_0_1.res" id="27_to388"]
+[ext_resource type="Texture2D" uid="uid://dtdwdu30wkchw" path="res://Models/Textures/Terrain/Grass 2/Grass006_2K-JPG_Roughness.jpg" id="27_u0can"]
 [ext_resource type="Image" uid="uid://dwlbltqy1qqu0" path="res://Scenes/Levels/Root/Splatmap_0_1_0.res" id="28_iaxxy"]
+[ext_resource type="ArrayMesh" uid="uid://cli4wka7fn0s7" path="res://Models/Meshes/Outside/Foliage/Trees/Trees .tres/spruceLOD4.tres" id="28_q81fv"]
+[ext_resource type="Texture2D" uid="uid://4siwrsmeko3f" path="res://Models/Textures/Terrain/Dry Grass/Ground003_2K-JPG_Color.jpg" id="28_s8u66"]
 [ext_resource type="PackedScene" uid="uid://dgrmcqwpcldsr" path="res://Scenes/Assets/Outside/road.tscn" id="28_to8t2"]
 [ext_resource type="Image" uid="uid://b3so746oynvv5" path="res://Scenes/Levels/Root/Heightmap_1_1.res" id="29_2flua"]
+[ext_resource type="Texture2D" uid="uid://cop25o1bej6jv" path="res://Models/Textures/Terrain/Dry Grass/Ground003_2K-JPG_NormalGL.jpg" id="29_31thn"]
+[ext_resource type="Image" uid="uid://cl3km7naobvch" path="res://Scenes/Levels/Root/Object_0_0_0.res" id="30_223ev"]
+[ext_resource type="Texture2D" uid="uid://dsd2bguw0ftbm" path="res://Models/Textures/Terrain/Dirt Path/Ground067_2K-JPG_Color.jpg" id="30_mlus1"]
 [ext_resource type="Image" uid="uid://clg0x30r6ld3g" path="res://Scenes/Levels/Root/Splatmap_1_1_0.res" id="30_o3bn0"]
+[ext_resource type="Texture2D" uid="uid://br2utdilaxhpt" path="res://Models/Textures/Terrain/Dry Grass/Ground003_2K-JPG_Roughness.jpg" id="30_v4g0x"]
 [ext_resource type="Image" uid="uid://bvvu61q5abged" path="res://Scenes/Levels/Root/Heightmap_1_0.res" id="31_2flua"]
+[ext_resource type="Texture2D" uid="uid://bej7lvphiwtf6" path="res://Models/Textures/Terrain/Dirt Path/Ground067_2K-JPG_NormalGL.jpg" id="31_06wwb"]
 [ext_resource type="Image" uid="uid://duqw61pn107q2" path="res://Scenes/Levels/Root/Splatmap_1_0_0.res" id="32_o3bn0"]
+[ext_resource type="Texture2D" uid="uid://davggqfek3o2n" path="res://Models/Textures/Terrain/Dirt Path/Ground067_2K-JPG_Roughness.jpg" id="32_qeqpw"]
 [ext_resource type="Image" uid="uid://b2ilnv6alh5x4" path="res://Scenes/Levels/Root/Heightmap_0_-1.res" id="33_lkdwi"]
+[ext_resource type="Texture2D" uid="uid://dc1hkugy8bw08" path="res://Models/Textures/Terrain/Dirt Ground/Ground103_2K-JPG_Color.jpg" id="33_m01oh"]
+[ext_resource type="Image" uid="uid://cf216jljqudlb" path="res://Scenes/Levels/Root/Object_0_1_0.res" id="33_mn8vk"]
 [ext_resource type="Image" uid="uid://nnf0er0vehlv" path="res://Scenes/Levels/Root/Splatmap_0_-1_0.res" id="34_1hgah"]
+[ext_resource type="Texture2D" uid="uid://0qos5fg78q0y" path="res://Models/Textures/Terrain/Dirt Ground/Ground103_2K-JPG_NormalGL.jpg" id="34_4ghte"]
 [ext_resource type="Image" uid="uid://cy6d4b8ymv70e" path="res://Scenes/Levels/Root/Heightmap_1_-1.res" id="35_duvi7"]
+[ext_resource type="Texture2D" uid="uid://bo2vcbvdokg4c" path="res://Models/Textures/Terrain/Dirt Ground/Ground103_2K-JPG_Roughness.jpg" id="35_xns2n"]
 [ext_resource type="Image" uid="uid://cog6qt2h1lwmd" path="res://Scenes/Levels/Root/Splatmap_1_-1_0.res" id="36_ku6of"]
+[ext_resource type="Texture2D" uid="uid://cukwikx6mkhin" path="res://Models/Textures/Terrain/Dark Grass/Grass003_2K-JPG_Color.jpg" id="36_olbe7"]
+[ext_resource type="Image" uid="uid://0wp7okoab5ju" path="res://Scenes/Levels/Root/Object_1_1_0.res" id="36_x7pvi"]
+[ext_resource type="Texture2D" uid="uid://77eq23ldoady" path="res://Models/Textures/Terrain/Dark Grass/Grass003_2K-JPG_NormalGL.jpg" id="37_2mfbl"]
+[ext_resource type="Texture2D" uid="uid://coc8fq8brip7m" path="res://Models/Textures/Terrain/Dark Grass/Grass003_2K-JPG_Roughness.jpg" id="38_up2x0"]
 [ext_resource type="PackedScene" uid="uid://bnul1ypsj5iil" path="res://Scenes/Mansion/mansion_walkway_slab.tscn" id="39_1hgah"]
+[ext_resource type="Image" uid="uid://ctakjstjchqtr" path="res://Scenes/Levels/Root/Object_1_0_0.res" id="39_eanpk"]
+[ext_resource type="Image" uid="uid://dw34e84ljmymu" path="res://Scenes/Levels/Root/Object_0_-1_0.res" id="42_ssl2o"]
+[ext_resource type="Image" uid="uid://xmp4lqkrmipg" path="res://Scenes/Levels/Root/Object_1_-1_0.res" id="45_u0can"]
+[ext_resource type="Image" uid="uid://cxnfd6a26lj0u" path="res://Scenes/Levels/Root/Splatmap_0_0_1.res" id="47_2mfbl"]
 [ext_resource type="PackedScene" uid="uid://b83fakwah5hf6" path="res://Scenes/Assets/Trees/spruceLOD0.tscn" id="48_223ev"]
+[ext_resource type="Image" uid="uid://cfvf1jiojf1bo" path="res://Scenes/Levels/Root/Splatmap_0_1_1.res" id="51_up2x0"]
+[ext_resource type="Image" uid="uid://3i5e5b25j2cr" path="res://Scenes/Levels/Root/Splatmap_1_1_1.res" id="55_nuqjq"]
+[ext_resource type="Image" uid="uid://c57i6y7wugk4" path="res://Scenes/Levels/Root/Splatmap_1_0_1.res" id="59_lfv7j"]
+[ext_resource type="Image" uid="uid://qpmbuowlert2" path="res://Scenes/Levels/Root/Splatmap_0_-1_1.res" id="63_cbsv8"]
+[ext_resource type="Image" uid="uid://v6w0k3111s04" path="res://Scenes/Levels/Root/Splatmap_1_-1_1.res" id="67_ra6ek"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_to8t2"]
 shader = ExtResource("2_lyn8b")
@@ -82,43 +113,125 @@ adjustment_brightness = 3.0
 [sub_resource type="BoxShape3D" id="BoxShape3D_drpmx"]
 
 [sub_resource type="TextureSetResource" id="TextureSetResource_lyn8b"]
+name = "Base Grass"
 albedoTexture = ExtResource("18_drpmx")
 normalTexture = ExtResource("19_drpmx")
 roughnessTexture = ExtResource("20_flk6o")
 textureDetail = 100
 specular = 0.11
 
+[sub_resource type="TextureSetResource" id="TextureSetResource_s8u66"]
+name = "Base Grass 2"
+albedoTexture = ExtResource("25_eanpk")
+normalTexture = ExtResource("26_ssl2o")
+roughnessTexture = ExtResource("27_u0can")
+textureDetail = 100
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_sq7fo"]
+name = "Dry Grass"
+albedoTexture = ExtResource("28_s8u66")
+normalTexture = ExtResource("29_31thn")
+roughnessTexture = ExtResource("30_v4g0x")
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_nuqjq"]
+name = "Dirt Path"
+albedoTexture = ExtResource("30_mlus1")
+normalTexture = ExtResource("31_06wwb")
+roughnessTexture = ExtResource("32_qeqpw")
+textureDetail = 100
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_lfv7j"]
+name = "Dirt Ground"
+albedoTexture = ExtResource("33_m01oh")
+normalTexture = ExtResource("34_4ghte")
+roughnessTexture = ExtResource("35_xns2n")
+textureDetail = 100
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_cbsv8"]
+name = "Dark Grass"
+albedoTexture = ExtResource("36_olbe7")
+normalTexture = ExtResource("37_2mfbl")
+roughnessTexture = ExtResource("38_up2x0")
+textureDetail = 100
+
 [sub_resource type="TextureSetsResource" id="TextureSetsResource_itrt6"]
-textureSets = Array[TextureSetResource]([SubResource("TextureSetResource_lyn8b")])
+textureSets = Array[TextureSetResource]([SubResource("TextureSetResource_lyn8b"), SubResource("TextureSetResource_s8u66"), SubResource("TextureSetResource_sq7fo"), SubResource("TextureSetResource_nuqjq"), SubResource("TextureSetResource_lfv7j"), SubResource("TextureSetResource_cbsv8")])
+
+[sub_resource type="ObjectOctreeLODDefinitionResource" id="ObjectOctreeLODDefinitionResource_x5l4i"]
+maxDistance = 20.0
+addCollision = true
+
+[sub_resource type="ObjectOctreeLODDefinitionResource" id="ObjectOctreeLODDefinitionResource_muulc"]
+maxDistance = 50.0
+
+[sub_resource type="ObjectOctreeLODDefinitionResource" id="ObjectOctreeLODDefinitionResource_223ev"]
+maxDistance = 100.0
+
+[sub_resource type="ObjectOctreeLODDefinitionResource" id="ObjectOctreeLODDefinitionResource_mn8vk"]
+maxDistance = 300.0
+
+[sub_resource type="ObjectOctreeLODMeshDefinitionResource" id="ObjectOctreeLODMeshDefinitionResource_x7pvi"]
+mesh = ExtResource("25_ghan2")
+
+[sub_resource type="ObjectOctreeLODMeshDefinitionResource" id="ObjectOctreeLODMeshDefinitionResource_eanpk"]
+mesh = ExtResource("26_qdfav")
+
+[sub_resource type="ObjectOctreeLODMeshDefinitionResource" id="ObjectOctreeLODMeshDefinitionResource_ssl2o"]
+mesh = ExtResource("27_ny580")
+
+[sub_resource type="ObjectOctreeLODMeshDefinitionResource" id="ObjectOctreeLODMeshDefinitionResource_u0can"]
+mesh = ExtResource("28_q81fv")
+
+[sub_resource type="ObjectOctreeLODMeshesDefinitionResource" id="ObjectOctreeLODMeshesDefinitionResource_s8u66"]
+meshes = Array[ObjectOctreeLODMeshDefinitionResource]([SubResource("ObjectOctreeLODMeshDefinitionResource_x7pvi"), SubResource("ObjectOctreeLODMeshDefinitionResource_eanpk"), SubResource("ObjectOctreeLODMeshDefinitionResource_ssl2o"), SubResource("ObjectOctreeLODMeshDefinitionResource_u0can")])
+
+[sub_resource type="ObjectDefinitionResource" id="ObjectDefinitionResource_31thn"]
+strategy = 2
+randomRange = 5.0
+randomRotation = true
+randomSize = true
+randomSizeFactorMin = 1.0
+randomSizeFactorMax = 1.35
+lodList = Array[ObjectOctreeLODDefinitionResource]([SubResource("ObjectOctreeLODDefinitionResource_x5l4i"), SubResource("ObjectOctreeLODDefinitionResource_muulc"), SubResource("ObjectOctreeLODDefinitionResource_223ev"), SubResource("ObjectOctreeLODDefinitionResource_mn8vk")])
+lodMeshes = Array[ObjectOctreeLODMeshesDefinitionResource]([SubResource("ObjectOctreeLODMeshesDefinitionResource_s8u66")])
+
+[sub_resource type="ObjectResource" id="ObjectResource_v4g0x"]
+definition = SubResource("ObjectDefinitionResource_31thn")
 
 [sub_resource type="ZoneResource" id="ZoneResource_7vw2v"]
 heightMapImage = ExtResource("21_drpmx")
-splatmapsImage = Array[Image]([ExtResource("25_1hov7")])
+splatmapsImage = Array[Image]([ExtResource("25_1hov7"), ExtResource("47_2mfbl")])
+objectsImage = Array[Image]([ExtResource("30_223ev")])
 
 [sub_resource type="ZoneResource" id="ZoneResource_k5sis"]
 zonePosition = Vector2i(0, 1)
 heightMapImage = ExtResource("27_to388")
-splatmapsImage = Array[Image]([ExtResource("28_iaxxy")])
+splatmapsImage = Array[Image]([ExtResource("28_iaxxy"), ExtResource("51_up2x0")])
+objectsImage = Array[Image]([ExtResource("33_mn8vk")])
 
 [sub_resource type="ZoneResource" id="ZoneResource_w2urk"]
 zonePosition = Vector2i(1, 1)
 heightMapImage = ExtResource("29_2flua")
-splatmapsImage = Array[Image]([ExtResource("30_o3bn0")])
+splatmapsImage = Array[Image]([ExtResource("30_o3bn0"), ExtResource("55_nuqjq")])
+objectsImage = Array[Image]([ExtResource("36_x7pvi")])
 
 [sub_resource type="ZoneResource" id="ZoneResource_lkdwi"]
 zonePosition = Vector2i(1, 0)
 heightMapImage = ExtResource("31_2flua")
-splatmapsImage = Array[Image]([ExtResource("32_o3bn0")])
+splatmapsImage = Array[Image]([ExtResource("32_o3bn0"), ExtResource("59_lfv7j")])
+objectsImage = Array[Image]([ExtResource("39_eanpk")])
 
 [sub_resource type="ZoneResource" id="ZoneResource_ghan2"]
 zonePosition = Vector2i(0, -1)
 heightMapImage = ExtResource("33_lkdwi")
-splatmapsImage = Array[Image]([ExtResource("34_1hgah")])
+splatmapsImage = Array[Image]([ExtResource("34_1hgah"), ExtResource("63_cbsv8")])
+objectsImage = Array[Image]([ExtResource("42_ssl2o")])
 
 [sub_resource type="ZoneResource" id="ZoneResource_qdfav"]
 zonePosition = Vector2i(1, -1)
 heightMapImage = ExtResource("35_duvi7")
-splatmapsImage = Array[Image]([ExtResource("36_ku6of")])
+splatmapsImage = Array[Image]([ExtResource("36_ku6of"), ExtResource("67_ra6ek")])
+objectsImage = Array[Image]([ExtResource("45_u0can")])
 
 [sub_resource type="ZonesResource" id="ZonesResource_flk6o"]
 zones = Array[ZoneResource]([SubResource("ZoneResource_7vw2v"), SubResource("ZoneResource_k5sis"), SubResource("ZoneResource_w2urk"), SubResource("ZoneResource_lkdwi"), SubResource("ZoneResource_ghan2"), SubResource("ZoneResource_qdfav")])
@@ -821,6 +934,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5519657, -0.031320944, 6.4
 [node name="TerraBrush" type="TerraBrush" parent="." unique_id=454899087]
 dataPath = "res://Scenes/Levels/Root"
 textureSets = SubResource("TextureSetsResource_itrt6")
+objects = Array[ObjectResource]([SubResource("ObjectResource_v4g0x")])
 terrainZones = SubResource("ZonesResource_flk6o")
 physics_interpolation_mode = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -85)
